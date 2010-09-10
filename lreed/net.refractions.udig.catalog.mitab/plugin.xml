@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="net.refractions.udig.catalog.ServiceExtension">
+      <service
+            class="net.refractions.udig.catalog.mitab.MITABServiceExtension"
+            id="net.refractions.udig.catalog.mitab.service"
+            name="MITAB Service Extension">
+      </service>
+   </extension>
+   <extension
+         point="net.refractions.udig.catalog.ui.fileFormat">
+      <fileService
+            fileExtension="*.tab"
+            name="Map Info TAB">
+      </fileService>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="net.refractions.udig.catalog.ui.preferences.CatalogPreferencePage"
+            class="net.refractions.udig.catalog.mitab.internal.ui.OgrPreferencePage"
+            id="net.refractions.udig.catalog.mitab.internal.ui.OgrPreferencePage"
+            name="MITAB">
+      </page>
+   </extension>
+
+</plugin>

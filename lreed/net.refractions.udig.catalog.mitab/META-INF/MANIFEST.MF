@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MITAB Plug-in
+Bundle-SymbolicName: net.refractions.udig.catalog.mitab;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: net.refractions.udig.catalog.ui,
+ org.eclipse.core.runtime
+Bundle-Activator: net.refractions.udig.catalog.mitab.internal.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Amanzi.com

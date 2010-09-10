@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="net.refractions.udig.project.ui.tool">
+      <actionTool
+            categoryId="net.refractions.udig.ui.transformtool"
+            class="net.refractions.udig.transformtool.TransformTool"
+            id="net.refractions.udig.ui.transformtool.actionTool2"
+            name="TransformTool"
+            onToolbar="true"/>
+      <modalTool
+            categoryId="net.refractions.udig.tool.edit.create"
+            class="net.refractions.udig.transformtool.VectorTool"
+            icon="icons/vectool/new_line_mode.gif"
+            id="net.refractions.udig.ui.transformtool.lineEdit"
+            onToolbar="false"
+            toolCursorId="arrowCursor">
+                  <cursor
+                        hotspotX="10"
+                        hotspotY="10"
+                        image="icons/pointers/edit_source.gif"/>
+                 
+        </modalTool>   
+        
+        <modalTool
+              categoryId="net.refractions.udig.tool.edit.feature"
+              class="net.refractions.udig.transformtool.DeleteVectorTool"
+              icon="icons/vectool/delete_feature_mode.gif"
+              id="net.refractions.udig.ui.transformtool.deleteTool"
+              onToolbar="false"
+              toolCursorId="deleteCursor">
+                  <cursor
+                        hotspotX="3"
+                        hotspotY="3"
+                        image="icons/pointers/delete_select_source.gif"/>
+                 
+               </modalTool>   
+   </extension>
+   <extension
+         id="org.eclipse.help.transformtoolhelp"
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc.xml"
+            primary="true"/>
+   </extension>
+   
+
+</plugin>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<HTML>
+  <HEAD>
+    <TITLE>package org.geotools.referencing.operation.builder</TITLE>
+  </HEAD>
+  <BODY>
+  This package provides implementations for building general 
+  {@linkplain org.opengis.referencing.operation.MathTransform MathTransform}
+  from a list of {@linkplain org.geotools.referencing.operation.builder.MappedPosition  MappedPosition}.
+
+<P>
+This package should be used when we have two datasets that should fit to each other but they don't (unknown coordinate reference system may be the reason). When we are able to specify the points that are the same on both datasets 
+({@linkplain org.geotools.referencing.operation.builder.MappedPosition  MappedPosition}) we should  transform our data by various ways.
+This package provides implementations for building several transformation methods. The builders are:
+</P>
+
+<UL>
+<LI> {@linkplain org.geotools.referencing.operation.builder.RubberSheetBuilder RubberSheetBuilder}
+<LI> {@linkplain org.geotools.referencing.operation.builder.BursaWolfTransformBuilder BursaWolfTransformBuilder}
+<LI> {@linkplain org.geotools.referencing.operation.builder.ProjectiveTransformBuilder ProjectiveTransfrmBuilder}
+<LI> {@linkplain org.geotools.referencing.operation.builder.AffineTransformBuilder AffineTransformBuilder}
+<LI> {@linkplain org.geotools.referencing.operation.builder.SimilarTransformBuilder SimilarTransformBuilder}
+</UL>
+<P>
+where the least square method is applied on the errors between target points and transformed source points (in that case that we have more identical points then the necessary number).
+</P>
+
+<P>
+
+</P>
+
+</BODY>
+</HTML>
+

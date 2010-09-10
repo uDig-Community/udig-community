@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Transformtool Plug-in
+Bundle-SymbolicName: net.refractions.udig.transformtool; singleton:=true
+Bundle-Version: 1.2.0
+Bundle-Activator: net.refractions.udig.transformtool.TransformtoolPlugin
+Bundle-Localization: plugin
+Require-Bundle: net.refractions.udig.project.ui,
+ net.refractions.udig.tools.edit,
+ org.eclipse.core.runtime,
+ net.refractions.udig.project.edit
+Eclipse-LazyStart: true
+Export-Package: net.refractions.udig.transformtool
+Bundle-ClassPath: .,
+ jars/gsoc-transformations-SNAPSHOT.jar

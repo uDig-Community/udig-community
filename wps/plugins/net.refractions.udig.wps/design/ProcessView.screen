@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" x="24" y="40" width="561" height="233" measuredWidth="561" measuredHeight="233"/>
+  <widgets xsi:type="model:Tabs" x="24" y="18" text="Process" measuredWidth="63" measuredHeight="23" selection="0"/>
+  <widgets xsi:type="model:Icon" x="559" y="22" measuredWidth="16" measuredHeight="16" icon="empty-arrow-down (small)"/>
+  <widgets xsi:type="model:Table" x="34" y="80" width="541" height="184" text="Result, Type, Process, Actions&#xA;[+] Buffer Cities, {check} Geometry, Buffer, [Add to Map] [Rerun]&#xA;[+] DEM to vector, {loading} In Progress, Raster to Vector, [Cancel]&#xA;" measuredWidth="541" measuredHeight="184" selection="2" verticalScrollbar="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" x="34" y="50" width="223" text="Search" measuredWidth="223" measuredHeight="24"/>
+  <widgets xsi:type="model:Icon" x="514" y="22" measuredWidth="16" measuredHeight="16" icon="wizard (small)"/>
+  <widgets xsi:type="model:Text" x="272" y="55" text="1 result in progress out of 2 results" measuredWidth="190" measuredHeight="13">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" x="492" y="22" measuredWidth="16" measuredHeight="16" icon="close (small)"/>
+  <widgets xsi:type="model:Icon" x="477" y="22" measuredWidth="16" measuredHeight="16" icon="play (small)"/>
+  <widgets xsi:type="model:Icon" x="538" y="22" measuredWidth="16" measuredHeight="16" icon="save (small)"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="90" y="40" width="505" height="505" text="Add Process" measuredWidth="505" measuredHeight="505"/>
+  <widgets xsi:type="model:Button" x="523" y="512" text="Finish" measuredWidth="52" measuredHeight="23" state="disabled">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="458" y="512" width="52" text="Cancel" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="393" y="512" width="52" text="Next" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="328" y="512" width="52" text="Previous" measuredWidth="52" measuredHeight="23" state="disabled">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="100" y="496" width="485" measuredWidth="485" measuredHeight="6"/>
+  <widgets xsi:type="model:Icon" x="104" y="512" measuredWidth="16" measuredHeight="16" icon="help (small)"/>
+  <widgets xsi:type="model:Label" x="100" y="69" text="Choose Process" measuredWidth="112" measuredHeight="25">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="100" y="136" width="485" measuredWidth="485" measuredHeight="6"/>
+  <widgets xsi:type="model:Icon" x="523" y="69" measuredWidth="48" measuredHeight="48" icon="wizard (xlarge)"/>
+  <widgets xsi:type="model:Text" x="100" y="93" width="415" height="44" text="Select a process from those registered with the uDig application. You may import additional web processing services into the uDig catalog in order to list them here." measuredWidth="415" measuredHeight="44">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tree" x="100" y="176" width="213" height="305" text="[] 52 North&#xA;[+] Local GeoTools &#xA;- {play} Buffer&#xA;- {play} Raster To Vector&#xA;[] Local Sextante&#xA;[] Local JGrass Tools&#xA;[] Zoo WPS&#xA;" measuredWidth="213" measuredHeight="305" verticalScrollbar="true" selection="3"/>
+  <widgets xsi:type="model:SearchField" x="100" y="144" width="213" text="Search" measuredWidth="213" measuredHeight="24"/>
+  <widgets xsi:type="model:Label" x="336" y="143" width="249" text="Raster To Vector" measuredWidth="249" measuredHeight="25">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Text" x="336" y="176" width="229" height="281" text="Converts a black and white image to a feature collection of distinct polygons." measuredWidth="229" measuredHeight="281">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="WPS" id="net.refractions.udig.wps.wpsapp" application="net.refractions.udig.ui.application" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/net.refractions.udig.wps/icons/about.gif"/>
+      <text>
+         Web Process Service (WPS) Client
+
+This is a plugin that adds support for WPS in the catalog view and provides a new view for executing processes.
+For more information visit http://udig.refractions.net/confluence/display/EN/WPS
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xmx386M -Dosgi.parentClassloader=ext</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Djava.awt.headless=true</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/net.refractions.udig.wps/icons/icon16.gif" i32="/net.refractions.udig.wps/icons/icon32.gif" i64="/net.refractions.udig.wps/icons/icon64.gif" i128="/net.refractions.udig.wps/icons/icon128.gif"/>
+
+   <splash
+      location="net.refractions.udig.wps"
+      startupProgressRect="0,196,500,8"
+      startupMessageRect="7,180,445,16"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="WPS">
+      <solaris/>
+      <win useIco="true">
+         <ico path="/net.refractions.udig.wps/icons/udig.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="net.refractions.udig.wps_feature" version="1.0.0"/>
+      <feature id="net.refractions.udig_base"/>
+      <feature id="net.refractions.udig_platform"/>
+      <feature id="net.refractions.udig_application"/>
+      <feature id="net.refractions.udig_printing"/>
+      <feature id="net.refractions.udig_language"/>
+      <feature id="net.refractions.udig"/>
+      <feature id="org.eclipse.rcp"/>
+   </features>
+
+
+</product>

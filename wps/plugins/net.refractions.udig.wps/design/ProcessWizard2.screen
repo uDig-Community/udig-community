@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" x="90" y="40" width="505" height="505" text="Add Process" measuredWidth="505" measuredHeight="505"/>
+  <widgets xsi:type="model:Button" x="523" y="512" text="Finish" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="458" y="512" width="52" text="Cancel" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="393" y="512" width="52" text="Next" measuredWidth="52" measuredHeight="23" state="disabled">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" x="328" y="512" width="52" text="Previous" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="100" y="496" width="485" measuredWidth="485" measuredHeight="6"/>
+  <widgets xsi:type="model:Icon" x="104" y="512" measuredWidth="16" measuredHeight="16" icon="help (small)"/>
+  <widgets xsi:type="model:Label" x="100" y="69" text="Raster To Vector" measuredWidth="118" measuredHeight="25">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" x="100" y="136" width="485" measuredWidth="485" measuredHeight="6"/>
+  <widgets xsi:type="model:Icon" x="523" y="69" measuredWidth="48" measuredHeight="48" icon="wizard (xlarge)"/>
+  <widgets xsi:type="model:Text" x="100" y="93" width="415" height="44" text="Converts a black and white image to a feature collection of distinct polygons." measuredWidth="415" measuredHeight="44">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="100" y="152" text="Source coverage:" measuredWidth="96" measuredHeight="21" textAlignment="Right">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="100" y="184" width="96" text="Band:" measuredWidth="96" measuredHeight="21" textAlignment="Right">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" x="208" y="152" width="353" text="DEM Layer" measuredWidth="353" measuredHeight="21"/>
+  <widgets xsi:type="model:Spinner" x="208" y="184" width="49" text="0" measuredWidth="49" measuredHeight="21"/>
+  <widgets xsi:type="model:Label" x="100" y="216" width="96" text="Bounds:" measuredWidth="96" measuredHeight="21" textAlignment="Right">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:RadioButton" x="208" y="216" text="Screen Area" measuredWidth="83" measuredHeight="21"/>
+  <widgets xsi:type="model:RadioButton" x="208" y="240" text="Raster Area" measuredWidth="82" measuredHeight="21" selected="true"/>
+  <widgets xsi:type="model:RadioButton" x="208" y="264" text="Selected Area" measuredWidth="92" measuredHeight="21"/>
+  <widgets xsi:type="model:Label" x="100" y="296" width="96" text="Outside values:" measuredWidth="96" measuredHeight="21" textAlignment="Right">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" x="208" y="296" width="353" height="73" text="NaN, 99999" measuredWidth="353" measuredHeight="73">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" x="100" y="376" width="96" text="Inside Edges:" measuredWidth="96" measuredHeight="21" textAlignment="Right">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Checkbox" x="208" y="376" text="Whether to vectorize inside edges" measuredWidth="202" measuredHeight="21"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

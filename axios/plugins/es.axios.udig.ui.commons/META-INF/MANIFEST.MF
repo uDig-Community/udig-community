@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Commons and utilities Plug-in
+Bundle-SymbolicName: es.axios.udig.ui.commons
+Bundle-Version: 0.1.0.rc2-20070906
+Bundle-Vendor: axios.es
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ net.refractions.udig.project.ui
+Export-Package: es.axios.udig.ui.commons.internal.i18n;x-internal:=true,
+ es.axios.udig.ui.commons.mediator,
+ es.axios.udig.ui.commons.util

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="es.axios.udig.ui.editingtools">
+  <ReviewIssue id="F4VCA87L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-02 :: 16:24:34:833 CEST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-02 :: 16:31:41:436 CEST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mauro</ReviewerId>
+    <AssignedTo>mauro</AssignedTo>
+    <File line="60">src/es/axios/udig/ui/editingtools/internal/geometryoperations/SplitStrategy.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Mejor la cohesión del split</Summary>
+    <Description>Existe un paquete split que contiene toda la inteligencia para hacer el Split. Esta clase debería estar en el paquete split y ser su interfaz. Así se evita ademas la necesidad de tener que hacer publicas todas las clases requeridas para el algoritmo split.</Description>
+    <Annotation>La muevo ahora por estar solo pero es necesario tener en cueta este criterio para el futuro</Annotation>
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="F4VIKST6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-02 :: 19:20:45:786 CEST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2007-08-02 :: 19:26:52:692 CEST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mauro</ReviewerId>
+    <AssignedTo>mauro</AssignedTo>
+    <File line="90">src/es/axios/udig/ui/editingtools/merge/internal/wizard/MergeFeatureBuilder.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>El builder es parte de la implementación no debería estar en la interfaz</Summary>
+    <Description>MergeFeatureBuilder: es parte de la implementación.  La interfaz de este subsistema se agranda innecesariamente con los métodos de esta clase. Dado que este subsistema tiene como objeto crear un Merge Feature solo debería tener los metodos propios de un dialogo (siguiendo el protocolo SWT) mas uno que devuelva el Merge, getMerge().</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

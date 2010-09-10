@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="net.refractions.udig.catalog.ui.connectionFactory">
+      <wizardPage
+            class="net.refractions.udig.georss.GeoRSSWizardPage"
+            id="net.refractions.udig.georss.wizardPage2"
+            name="GeoRSSPoints"/>
+      <factory class="net.refractions.udig.georss.GeoRSSConnectionFactory"/>
+   </extension>
+   <extension
+         point="net.refractions.udig.catalog.ServiceExtension">
+      <service
+            class="net.refractions.udig.georss.GeoRSSServiceExtension"
+            id="net.refractions.udig.georss.service1"
+            name="net.refractions.udig.georss.service1"/>
+   </extension>
+
+</plugin>

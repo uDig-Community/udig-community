@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Georss Plug-in
+Bundle-SymbolicName: net.refractions.udig.georss;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.refractions.udig.georss.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.refractions.udig.libs,
+ net.refractions.udig.catalog.ui,
+ net.refractions.udig.project.ui
+Eclipse-LazyStart: true

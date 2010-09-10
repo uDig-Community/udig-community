@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LineCleaner Cleansing Plug-in
+Bundle-SymbolicName: net.refractions.linecleaner.cleansing; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.refractions.linecleaner.cleansing.CleansingPlugin
+Bundle-Vendor: Refractions.net
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.refractions.udig.libs,
+ net.refractions.udig.ui,
+ net.refractions.linecleaner,
+ net.refractions.udig.project
+Eclipse-AutoStart: true
+Export-Package: net.refractions.linecleaner.cleansing,
+ net.refractions.linecleaner.cleansing.views

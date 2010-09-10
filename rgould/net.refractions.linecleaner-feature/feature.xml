@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.refractions.linecleaner"
+      label="net.refractions.linecleaner-feature"
+      version="1.0.0"
+      provider-name="Refractions.net">
+
+   <description url="http://udig.refractions.net/confluence/display/COM/Line+Cleaner">
+      Line Cleaner is a tool that can be used to perform &apos;light-conflation&apos; on line data.
+   </description>
+
+   <license>
+      This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation;
+version 2.1 of the License.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="net.refractions.udig.libs"/>
+      <import plugin="net.refractions.udig.ui"/>
+      <import plugin="net.refractions.udig.project"/>
+      <import plugin="net.refractions.udig.project.ui"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+   </requires>
+
+   <plugin
+         id="net.refractions.linecleaner"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.refractions.linecleaner.cleansing"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.refractions.linecleaner.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cleansing Test Plug-in
+Bundle-SymbolicName: net.refractions.linecleaner.cleansing.test
+Bundle-Version: 1.0.0
+Bundle-Activator: net.refractions.linecleaner.cleansing.test.TestPlugin
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.refractions.linecleaner.cleansing,
+ org.junit,
+ net.refractions.udig.libs,
+ net.refractions.linecleaner,
+ net.refractions.udig.project
+Eclipse-AutoStart: true

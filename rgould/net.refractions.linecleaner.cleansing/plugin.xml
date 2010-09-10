@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="MOF Category"
+            id="net.refractions.linecleaner">
+      </category>
+      <view
+            name="Cleansing View"
+            icon="icons/sample.gif"
+            category="net.refractions.linecleaner"
+            class="net.refractions.linecleaner.cleansing.views.CleansingView"
+            id="net.refractions.linecleaner.cleansing.views.CleansingView">
+      </view>
+   </extension>
+
+</plugin>

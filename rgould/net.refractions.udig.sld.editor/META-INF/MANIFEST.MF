@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %plugin.name
+Bundle-SymbolicName: net.refractions.udig.sld.editor; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.refractions.udig.sld.editor.EditorPlugin
+Bundle-Vendor: %plugin.provider
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.gef,
+ net.refractions.udig.libs,
+ net.refractions.udig.project.ui
+Eclipse-AutoStart: true

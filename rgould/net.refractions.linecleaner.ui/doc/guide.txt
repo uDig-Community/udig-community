@@ -1,0 +1,39 @@
+Once uDig is first opened, you are presented with the Welcome screen. Press the Workspace button in the top right corner (highlighted in the red circle in Figure 1) to close it.
+
+FIGURE 1 - close_welcome.png
+
+You will be presented with the uDig workbench. To get your data on to the screen, drag the shapefile from Windows Explorer in to the top right area of uDig. Repeat this for as much data as you would like to see displayed.
+
+FIGURE 2 - drag_shp.png
+
+Each dataset appears in the Layers view, in the bottom left corner. Select the layers that you want to operate on by holding down the CTRL key and left-clicking on the layer name. Right click on one of the selected layers and choose Operations -> Line Cleaning.
+
+FIGURE 3 - open_cleaner.png
+
+The Line Cleaning Wizard will appear and you will be presented with a series of pages where you can configure the options. The first page allows you to add or remove more datasets, and prioritize them. You can also specify whether you only want to perform data preparation or light conflation, or both.
+
+Press the add button to add more layers to the operation. Remove will remove the selected layer from the operation. Up and down order the priority of the layers. The layer at the top of the list has the highest priority, meaning that if a decision is required to remove a feature from multiple datasets, the features with the highest priority will be kept.
+
+Push Next when you are ready.
+
+FIGURE 4 - operations_page.png
+
+Now you can select the destination for the new shapefile. Press the browse button choose a directory. If you double-click on the text box, the name section of the file will be highlighted. If the file exists you will be presented with a warning.
+
+Push Next when you are ready.
+
+FIGURE 5 - output_page.png
+
+Now you can configure the options for each individual operation. If you change a value, you can view its original default by hovering the mouse over the label. 
+
+Press Finish when you are done to begin the operation.
+
+FIGURE 6 - options_page.png
+
+The operation will run, and its progress will be displayed along the button. You can press cancel at anytime to stop the operation. Note: some operations may take a while and cannot be cancelled during execution, which may result in a long delay after cancel has been pressed. Also note that the process might take a very long time on large data sets.
+
+FIGURE 7 - cleaner_running.png
+
+After it is finished, a new shapefile will be created at the location specified in Figure 5. This will also be added to the current map in uDig, as shown in Figure 8.
+
+FIGURE 8 - cleaner_done.png

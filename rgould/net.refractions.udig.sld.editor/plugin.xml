@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="net.refractions.udig.sld.editor.internal.ui.SLDEditor"
+            default="true"
+            extensions="sld"
+            icon="icons/obj16/page_obj.gif"
+            id="net.refractions.udig.sld.editor"
+            name="%sld.editor.name"/>
+   </extension>
+
+</plugin>

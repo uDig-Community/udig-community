@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="net.refractions.udig.ui.operation">
+      <operation
+            class="net.refractions.linecleaner.ui.LineCleaningOp"
+            enablesFor="+"
+            id="net.refractions.linecleaner.lineCleaning"
+            name="Line Cleaning"
+            targetClass="net.refractions.udig.project.ILayer">
+         <enablement>
+            <filter adaptsTo="org.geotools.data.FeatureStore"/>
+         </enablement>
+      </operation>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="net.refractions.linecleaner.ui.actionSet1"
+            label="net.refractions.linecleaner.ui.actionSet1">
+         <action
+               id="net.refractions.linecleaner.ui.action1"
+               label="net.refractions.linecleaner.ui.action1"
+               style="push"/>
+      </actionSet>
+   </extension>
+</plugin>

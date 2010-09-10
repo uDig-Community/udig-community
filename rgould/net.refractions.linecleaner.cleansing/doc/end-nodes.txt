@@ -1,0 +1,37 @@
+Algorithm for End-Node handling:
+================================
+
+foreach end-node (A) in dataset {
+	
+	foreach end-node (B) that is within TOLERANCE distance {
+		if end-node A and end-node B exist in the same NodeCollection, 
+		           skip to the next end-Node B.
+		if end-node A exists inside a NodeCollection (E) {
+			add end-node B to NodeCollection E
+		} else {
+			if end-node B is inside a NodeCollection (X) {
+				add end-node A to NodeCollection X
+			} else {
+  			create NodeCollection E
+	  		add end-node A to NodeCollection E
+	  	  add end-node B to NodeCollection E
+	  	}
+		}
+	}
+}
+		
+foreach NodeCollection (C) in node-collections {
+	compute bounding box F of all the end-nodes in C
+	if the width/length ratio of bbox F is greater than RATIO_TOLERANCE
+		flag NodeCollection
+	if total area of bbox F is greater than AREA_TOLERANCE
+		flag NodeCollection
+	calculate the average coordinate point (ACP) of 
+	       all the end-nodes in NodeCollection C and save this 
+	
+	if NodeCollection C is not flagged {       
+		foreach end-node (D) in NodeCollection C {
+			change the coordinate of end-node D to ACP
+		}
+	}
+}

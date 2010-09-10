@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="net.refractions.udig.community.jody.tile.service"
+         name="Tile Service Handle"
+         point="net.refractions.udig.catalog.ServiceExtension">
+      <service class="net.refractions.udig.community.jody.tile.internal.TileServiceExtention" id="net.refractions.udig.community.jody.tile"/>
+   </extension>
+   <extension
+         id="net.refractions.udig.community.jody.tile.layerSetFile"
+         name="LayerSet File"
+         point="net.refractions.udig.catalog.ui.fileFormat">
+      <fileService
+            fileExtension="*.xml"
+            name="*.xml"/>
+   </extension>
+   <extension
+         id="net.refractions.udig.community.jody.tile.render"
+         name="TileMap Renderer"
+         point="net.refractions.udig.project.renderer">
+      <renderer
+            class="net.refractions.udig.community.jody.tile.DirectTileFactory"
+            id="net.refractions.udig.community.jody.tile.render.direct"
+            name="Direct Tile Renderer">
+         <description>
+            Direct Tile Renderer will load and display a TileSet, triggering a refresh on every tick of the progress monitor.
+         </description>
+      </renderer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup class="net.refractions.udig.community.jody.tile.Preload"/>
+   </extension>
+
+</plugin>

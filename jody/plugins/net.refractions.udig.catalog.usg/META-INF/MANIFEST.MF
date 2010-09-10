@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Usg Plug-in
+Bundle-SymbolicName: net.refractions.udig.catalog.usg; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: net.refractions.udig.catalog.usg.UsgPlugin
+Bundle-Vendor: Jody Garnett, Refractions Research, James Macgill Penn State
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,
+ net.refractions.udig.catalog,
+ net.refractions.udig.libs,
+ net.refractions.udig.catalog.memory,
+ org.junit
+Eclipse-AutoStart: true

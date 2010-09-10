@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Visual Plug-in
+Bundle-SymbolicName: net.refractions.udig.community.jody.visual;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Refractions.net
+Bundle-Localization: plugin
+Eclipse-LazyStart: true

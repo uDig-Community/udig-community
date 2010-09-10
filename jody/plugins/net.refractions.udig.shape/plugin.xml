@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         id="net.refractions.udig.shape.operation"
+         name="Shapefile Export Opperations"
+         point="net.refractions.udig.ui.operation">
+      <operation
+            categoryId="net.refractions.udig.project.ui.exportOps"
+            class="net.refractions.udig.shape.export.ExportFeatures"
+            id="net.refractions.udig.tutorials.shpexport.operation"
+            name="Export Features"
+            targetClass="org.geotools.data.FeatureSource"/>
+      <operation
+            categoryId="net.refractions.udig.project.ui.exportOps"
+            class="net.refractions.udig.shape.export.ExportSelection"
+            id="net.refractions.udig.style.sld.export"
+            name="Export Selected Features"
+            targetClass="net.refractions.udig.project.ILayer"/>            
+   </extension>
+</plugin>

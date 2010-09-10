@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="net.refractions.wkt"
+         name="wktPaste"
+         point="net.refractions.udig.ui.operation">
+      <operation
+            categoryId="net.refractions.udig.project.ui.operation.selectionCategory"
+            class="net.refractions.wkt.PasteWKTMap"
+            enablesFor="1"
+            id="net.refractions.wkt.pastemap"
+            name="Paste Well Known Text (Map)"
+            targetClass="net.refractions.udig.project.IMap">
+         <enablement></enablement>
+      </operation>
+      <operation
+            categoryId="net.refractions.udig.project.ui.operation.selectionCategory"
+            class="net.refractions.wkt.PasteWKTLayer"
+            enablesFor="1"
+            id="net.refractions.wkt.pastelayer"
+            name="Paste Well Known Text (Layer)"
+            targetClass="net.refractions.udig.project.ILayer">
+         <enablement></enablement>
+      </operation>
+   </extension>
+
+</plugin>

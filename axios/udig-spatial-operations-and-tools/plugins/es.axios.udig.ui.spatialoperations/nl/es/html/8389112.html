@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Spanish Users Guide : Operación Polygon to Line</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Spanish Users Guide : Operación Polygon to Line -->
+       <h1>Operación Polygon to Line</h1>
+       
+<p>Transforma una capa polígono en una capa de tipo lineString.</p>
+
+
+<p>La operación Polygon to Line obtiene los features de la capa fuente y los transforma en features lineString.</p>
+
+<p>La capa resultante sera del tipo de geometría LineString o MultiLineString, depende en la capa de origen, y puede ser una nueva capa o una existente.</p>
+
+<h2><a name="Operaci%C3%B3nPolygontoLine-EjemplodeUso"></a>Ejemplo de Uso</h2>
+
+<p>En este ejemplo vamos a realizar la operación Polygon to Line con la capa countries.shp.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389112/ptl-before.png' target='ptl-before.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389112/ptl-before.png", "ptl-before.png", "height=659,width=875,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389112/ptl-before.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 1. Antes de la operación.</b></p>
+
+<p>Nos dirigimos a la Vista de <em>Operaciones Espaciales</em>, y seleccionamos <em>Polygon to Line</em> en el menú de <em>Operaciones</em>.<br/>
+Aparecen las opciones específicas de la <em>Operación Polygon to Line</em>.</p>
+
+<p>Debemos indicar los valores de entrada de la operación, como se muestra en la <em>Figura 2</em>:</p>
+<ul class="alternate" type="square">
+	<li><b>Seleccionar la Capa</b> <b><em>Fuente</em></b><br/>
+En la lista desplegable <em>Fuente</em>, seleccionar la Capa que contenga los Features a transformar.</li>
+	<li><b>Seleccionar la Capa</b> <b><em>Resultante</em></b><br/>
+En la lista desplegable <em>Capa</em>, se propondrá un nombre de Capa por defecto para la capa que creará la operación. Puedes cambiar el nombre o seleccionar una Capa existente donde almacenar los resultados.</li>
+</ul>
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389112/ptl-ui.png' target='ptl-ui.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389112/ptl-ui.png", "ptl-ui.png", "height=344,width=966,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389112/ptl-ui.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 2. Definir las capas de entrada y resultante.</b></p>
+
+<ul class="alternate" type="square">
+	<li><b>Realizar la operación</b><br/>
+Una vez que las capas de entrada y la resultante sean definidas, pulsar el botón <em>Ejecutar</em> de la barra de herramientas de las <em>Operaciones Espaciales</em>. La operación comenzará a procesar y su progreso se mostrará en un diálogo de progreso, como se muestra en la <em>Figura 3</em>. La operación puede tardar un rato en completarse, dependiendo del número y complejidad de las geometrías de entrada.</li>
+</ul>
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389112/ptl-progress.png' target='ptl-progress.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389112/ptl-progress.png", "ptl-progress.png", "height=243,width=562,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389112/ptl-progress.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 3. Diálogo de progreso.</b></p>
+
+<p>Una vez que finaliza la Operación, si se creó una nueva capa para almacenar el resultado, ésta será automáticamente añadida al Mapa actual.</p>
+
+<p>La <em>Figura 4</em> muestra la recién creada Capa (Polygon to Line_1) añadida al mapa, con los Features resultantes de aplicar la transformación de la capa fuente.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389112/ptl-after.png' target='ptl-after.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389112/ptl-after.png", "ptl-after.png", "height=426,width=913,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389112/ptl-after.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 4. Capa Resultado.</b></p>
+
+<h3><a name="Operaci%C3%B3nPolygontoLine-Explotarlaslineas."></a>Explotar las lineas.</h3>
+
+<p>La operación <em>Polygon to Line</em> tiene la opción de explotar los polígonos, es decir, cada segmento de linea del polígono sera un feature LineString.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389112/ptl-explode.png' target='ptl-explode.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389112/ptl-explode.png", "ptl-explode.png", "height=344,width=966,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389112/ptl-explode.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 5. Seleccionar explotar</b>.</p>
+
+<p>En este caso, seleccionamos el pais Irlanda, y despues de chekear la opción de explotar, ejecutamos la operación dandonos como resultado lo siguiente:</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389112/ptl-explode1.png' target='ptl-explode1.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389112/ptl-explode1.png", "ptl-explode1.png", "height=661,width=830,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389112/ptl-explode1.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 6. Lineas explotadas</b></p>
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>

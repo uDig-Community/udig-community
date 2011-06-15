@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Spanish Users Guide : Operación Intersectar</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Spanish Users Guide : Operación Intersectar -->
+       <h1>Operación Intersectar</h1>
+       <p>Calcula la intersección geométrica entre dos capas</p>
+
+<p>La <em>Operación Intersección</em> toma los features de dos <em>Capas Fuente</em> de tipo <b>vector</b> y calcula la intersección entre sus geometrías de feature, almacenando el resultado en una <em>Capa Resultado</em>.<br/>
+Si la <em>Capa Resultado</em> tiene seleccionado algún feature, la operación se llevará a cabo contra ellos, de lo contrario, se utilizarán los Features de toda la Capa.<br/>
+Las <em>Capas Fuente</em> no son modificadas bajo ningún concepto. Se crea una nueva <em>Capa Resultante</em> por defecto, o el usuario puede especificar una Capa editable de tipo vector donde almacenar los resultados.</p>
+
+<h2><a name="Operaci%C3%B3nIntersectar-EjemplodeUso"></a>Ejemplo de Uso</h2>
+
+<p>La <em>Operación Intersección</em> trabaja sobre los features seleccionados de las capas deseadas, o sobre la totalidad de las capas si no se establece una selección.</p>
+
+<p>En este ejemplo, comenzaremos seleccionando un único Feature de una de las capas de interés, como se muestra en la <em>Figura 1</em>.<br/>
+<a href='http://udig.refractions.net/confluence//download/attachments/7962814/intersect_1_select.png' target='intersect_1_select.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962814/intersect_1_select.png", "intersect_1_select.png", "height=790,width=1052,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962814/intersect_1_select.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 1. Limitar el ámbito de la operación mediante una selección</b></p>
+
+<p>Ir a la Vista de <em>Operaciones Espaciales</em> y seleccionar <em>Intersectar</em> de la lista de <em>Operaciones</em>.</p>
+
+<p>Se mostrarán las opciones de entrada específicas de la <em>Operación Intersección</em> (<em>Figura 2</em>).</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962814/intersect_2_input.png' target='intersect_2_input.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962814/intersect_2_input.png", "intersect_2_input.png", "height=370,width=1037,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962814/intersect_2_input.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 2. controles de la Operación Intersectar</b></p>
+<ul class="alternate" type="square">
+	<li><b>Seleccionar las Capas Fuente</b><br/>
+En <em>Fuente</em> seleccionar las <em>Capas</em> a intersectar en las listas deplegables de <em>Primera Capa</em> y <em>Segunda Capa</em>. Por defecto, la <em>Capa</em> actualmente seleccionada en la <em>Vista de Capas</em> será elegida para la opción de la <em>Primera Capa</em>.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Seleccionar la Capa Resultado</b><br/>
+La lista desplegable de la <em>Capa Resultado</em> contendrá una proposición para el nombre de Capa a crear para albergar los resultados de la operación. Puede dejarse como está, escribir otro nombre de Capa, o seleccionar una Capa existente de la lista desplegable de <em>Capa Resultado</em>. En este último caso, el resultado de la operación será almacenado en la Capa seleccionada.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Realizar la operación</b><br/>
+Pulsar el botón <em>Ejecutar</em> de la barra de herramientas de la Vista.  La operación comenzará y el progreso se mostrará en un diálogo de progreso, como se muestra en la Figura 3. La operación puede tardar en completarse, dependiendo del número y complejidad de las geometrías de entrada.</li>
+</ul>
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962814/intersect_3_progress.png' target='intersect_3_progress.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962814/intersect_3_progress.png", "intersect_3_progress.png", "height=322,width=653,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962814/intersect_3_progress.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 3. Diálogo de Progreso</b></p>
+
+<p>Una vez que termina la Operación, si una nueva Capa ha sido creada para albergar el resultado, será añadida automáticamente al Mapa actual.</p>
+
+<p>La <em>Figura 4</em> muestra la Capa recién creada (<em>Intersect-1</em>, en verde) añadida al Mapa, con el feature que intersecta las Capas <em>Municipality</em> y <em>Voting Areas</em>.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962814/intersect_4_result.png' target='intersect_4_result.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962814/intersect_4_result.png", "intersect_4_result.png", "height=790,width=1052,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962814/intersect_4_result.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 4. Resultado de la Operación</b></p>
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>

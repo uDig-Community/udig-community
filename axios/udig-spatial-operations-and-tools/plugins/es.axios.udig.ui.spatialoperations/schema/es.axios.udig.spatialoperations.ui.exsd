@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="es.axios.udig.ui.spatialoperations" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appInfo>
+         <meta.schema plugin="es.axios.udig.ui.spatialoperations" id="es.axios.udig.spatialoperations.ui" name="Axios Spatial Operations Ex. Point"/>
+      </appInfo>
+      <documentation>
+         &lt;p&gt;The Spatial Operation extension point allows third-party developers to contribute with new operation for UDIG  using the general user interface concept, implemented by the spatial operation framework: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;ISOBuilder:&lt;/b&gt; This interface is used by the spatial operation framework to associate the new operation&apos;s components.
+It is recomended to use the &lt;b&gt;AbstractSpatialOperationBuilder&lt;/b&gt; which provides the default behavior. Thus a new instance of &lt;b&gt;ISOParametersPresenterFactory&lt;/b&gt; and &lt;b&gt;ISOCommand&lt;/b&gt;, developed in this extension, will be created and associated to the spatial operation framework.
+  
+&lt;li&gt; &lt;b&gt;ISOParametersPresenterFactory:&lt;/b&gt; Define the implementation for the user interface components which presents the parameters and operation&apos;s metaphor (&lt;b&gt;ISOAggregatedPresenter&lt;/b&gt; and I&lt;b&gt;ImageOperation&lt;/b&gt;) &lt;/li&gt;
+
+
+&lt;li&gt; &lt;/li&gt;
+&lt;/ul&gt;
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appInfo>
+            <meta.element />
+         </appInfo>
+      </annotation>
+      <complexType>
+         <choice>
+            <element ref="SpatialOperationBuilder"/>
+         </choice>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appInfo>
+                  <meta.attribute translatable="true"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="SpatialOperationBuilder">
+      <annotation>
+         <documentation>
+            Associates the spatial operation presenter and its command. The extension plug-in must provide an implementation for the composite that presents the operation&apos;s parameters and the images related with the different possible results for the different parameter values.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="SPATIAL_OPERATION_BUILDER_ID" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Identifier for this builder.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="SOBuilder" type="string" use="required">
+            <annotation>
+               <documentation>
+                  This builds the new spatial operation implementations.  It is recommended that the &lt;b&gt;AbstractSpatialOperationBuilder&lt;/b&gt; class is extended. &lt;b&gt;AbstractSpatialOperationBuilder&lt;/b&gt; provide the behaviour to give the new collaboration to the spatial operation framework.
+               </documentation>
+               <appInfo>
+                  <meta.attribute kind="java" basedOn=":es.axios.udig.spatialoperations.ui.parameters.ISOBuilder"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="since"/>
+      </appInfo>
+      <documentation>
+         1.2
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="examples"/>
+      </appInfo>
+      <documentation>
+         The following extension declares &lt;b&gt;MySOBuilder&lt;/b&gt; as extension point.
+&lt;pre&gt;
+   &lt;extension
+         point=&quot;es.axios.udig.spatialoperations.ui&quot;&gt;
+      &lt;SpatialOperationBuilder
+            SOBuilder=&quot;es.axios.spatialoperations.tutorial.MySOBuilder&quot;
+            SPATIAL_OPERATION_BUILDER_ID=&quot;es.axios.spatialoperations.tutorial.MySOBuilder&quot;&gt;
+      &lt;/SpatialOperationBuilder&gt;
+   &lt;/extension&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;
+The plugin must provide an implementation for the abstract method &lt;b&gt;build()&lt;/b&gt;. The following sample defines the factory presenters and their commands for the spatial operations Centroid and Union. The default method &lt;b&gt;addCollaboration()&lt;/b&gt; is used to simplify the implementation. 
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;pre&gt;
+public class MySOBuilder extends AbstractSpatialOperationBuilder {
+
+ @Override
+ public void build(Composite container) {
+  
+  addCollaboration(container, 
+      new SOCentroidParametersFactory(),
+      new SOCentroidCommand());
+
+  addCollaboration(container, 
+      new SOUnionParametersFactory(),
+      new SOUnionidCommand());
+ }
+
+}
+
+public class SOCentroidParametersFactory implements ISOParametersPresenterFactory {
+
+ public ISOAggregatedPresenter createDataComposite(ScrolledComposite parent, int style) {
+
+  return new SOCentroidParametersFactory(parent, style);
+ }
+
+ public IImageOperation createDemoImages() {
+
+  return new CopyImages();
+ }
+
+}
+public class SOUnionParametersFactory implements ISOParametersPresenterFactory {
+
+ public ISOAggregatedPresenter createDataComposite(ScrolledComposite parent, int style) {
+
+  return new SOUnionParametersFactory(parent, style);
+ }
+
+ public IImageOperation createDemoImages() {
+
+  return new UnionImages();
+ }
+
+}
+
+
+&lt;/pre&gt;
+&lt;/p&gt;
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="apiInfo"/>
+      </appInfo>
+      <documentation>
+         &lt;/ul&gt;
+
+&lt;li&gt;&lt;b&gt;ISOAggregatedPresenter:&lt;/b&gt; Presenter to display the parameter (input and output). &lt;/li&gt;
+
+&lt;li&gt;&lt;b&gt;IImageOperation:&lt;/b&gt; provides the metaphor for the inputs and result of the spatial operation.&lt;/li&gt;
+
+&lt;li&gt;&lt;b&gt;ISOCommand:&lt;/b&gt; defines the protocol required to validate the parameters and execute the associated spatial operation 
+ &lt;/li&gt;
+ 
+&lt;/ul&gt;
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="implementation"/>
+      </appInfo>
+      <documentation>
+         [Enter information about supplied implementation of this extension point.]
+      </documentation>
+   </annotation>
+
+
+</schema>

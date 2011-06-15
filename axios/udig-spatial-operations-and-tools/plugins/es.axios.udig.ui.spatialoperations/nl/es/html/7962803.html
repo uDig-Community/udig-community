@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Spanish Users Guide : Operación Buffer</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Spanish Users Guide : Operación Buffer -->
+       <h1>Operación Buffer</h1>
+       <h1><a name="Operaci%C3%B3nBuffer-"></a></h1>
+<p>Calcula un área buffer alrededor de las geometrías seleccionadas.<br/>
+La <em>Operación Buffer</em> toma los features de una capa <em>fuente</em> de tipo <b>vector</b> y crea a su alrededor un area buffer de una distancia especificada, almacenando el resultado en una <em>Capa Resultado</em>.<br/>
+Si la <em>Capa Fuente</em> tiene features seleccionados, la operación será realizada contra ellos, de lo contrario, serán utilizados los features de toda la capa.<br/>
+La <em>Capa Fuente</em> no se modifica bajo ningún concepto. Una nueva <em>Capa Resultado</em> se crea por defecto, o el usuario puede especificar un capa vector existente y editable donde almacenar los resultados.</p>
+
+<h2><a name="Operaci%C3%B3nBuffer-EjemplodeUso"></a>Ejemplo de Uso</h2>
+
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+<td class="confluenceTd"  valign="top"></td>
+<p>Ir a la Vista de <em>Operaciones Espaciales</em>, y seleccionar <em>Buffer</em> en el menú de <em>Operaciones</em>.</p>
+
+<p>Aparecerán las opciones de entrada específicas de la Operación Buffer.</p>
+<ul class="alternate" type="square">
+	<li><b>Seleccionar la</b> <b><em>Capa Fuente</em></b><br/>
+En la lista desplegable de <em>Capa Fuente</em>, seleccionar la <em>Capa</em> de la que quiere crear el area buffer. Por defecto, se seleccionará la <em>Capa</em> actualmente seleccionada en la <em>Vista de Capas</em>.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Seleccionar la</b> <b><em>Capa Resultado</em></b><br/>
+La lista desplegable de <em>Capa Resultado</em> contendrá un nombre de capa propuesto para la Capa a ser creada para albergar los resultados de la operación. Puede dejarlo como está, escribir otro nombre de Capa, o seleccionar una Capa existente en la lista desplegable de <em>Capa Resultado</em>. En el último caso, el resultado de la operación será almacenado en la Capa seleccionada.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Establecer</b> <b><em>Distancia</em></b> <b>y</b> <b><em>Unidades</em></b><br/>
+En la sección de <em>Opciones</em>, especificar el valor escalar para el cálculo del ancho del area del buffer alrededor de los Features fuente, y seleccionar en qué unidad de medida se debe considerar el ancho del buffer. Puede elegir entre las unidades actuales del <b>Mapa</b>, las del <b>Layer</b> o incluso elegir otra unidad de medida de la lista de <em>Unidades</em>.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Realizar la operación</b><br/>
+Presione el botón <b><em>Ejecutar</em></b> de la barra de herramientas de la Vista y la operación dará comienzo.</li>
+</ul>
+</tr></tbody></table>
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962803/buffer_1.png' target='buffer_1.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962803/buffer_1.png", "buffer_1.png", "height=970,width=1048,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962803/buffer_1.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 1. Interfaz de usuario de la Operación Buffer</b></p>
+<td class="confluenceTd"  valign="top">
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+<p>Una vez haya presionado el botón <em>Ejecutar</em>, el progreso de la operación se mostrará en un diálogo de proceso, como se muestra en la <em>Figura 2</em>. La operación puede llevar un rato en completarse, dependiendo del número y complejidad de la geometrías de entrada.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962803/buffer_3.png' target='buffer_3.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962803/buffer_3.png", "buffer_3.png", "height=350,width=683,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962803/buffer_3.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 2. Dialogo de Progreso</b></p></tr></tbody></table></td>
+<p>Una vez que finaliza la Operación, si se creó una nueva Capa para almacenar el resultado, será automáticamente añadida al Mapa actual.</p>
+
+<p>La <em>Figura 3</em> muestra la nueva Capa creada (<em>Buffer-1</em>, en verde) añadida al mapa, con <b>un</b> Feature cuya geometría es el resultado agregado de aplicar el buffer especificado a las geometrías por defecto en los Features fuente.</p>
+<td class="confluenceTd"  valign="top"></td>
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962803/buffer_4.png' target='buffer_4.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962803/buffer_4.png", "buffer_4.png", "height=657,width=530,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962803/buffer_4.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 3. Capa Resultado</b></p>
+<td class="confluenceTd"  valign="top">
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+
+<h2><a name="Operaci%C3%B3nBuffer-OpcionesAvanzadas"></a>Opciones Avanzadas</h2>
+
+<p>La <em>Operación Buffer</em> contiene varias opciones avanzadas que se pueden establecer para controlar ciertos aspectos del proceso.</p>
+
+<p>Por ejemplo, la <em>Figura 4</em> muestra los controles para las opciones avanzadas de <b>Unir las geometrías</b> y <b>Segmentos por cuadrante</b>.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962803/buffer_5_no_merge.png' target='buffer_5_no_merge.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962803/buffer_5_no_merge.png", "buffer_5_no_merge.png", "height=123,width=560,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962803/buffer_5_no_merge.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 4. Opciones Avanzadas</b></p></tr></tbody></table></td>
+<ul class="alternate" type="square">
+	<li><b><em>Unir las geometrías</em></b><br/>
+La opción <em>Unir las geometrías</em> controla si se debe crear una única geometría agregada para todo el conjunto de Features fuente, o si por el contrario se debe crear un nuevo Feature en la <em>Capa Resultado</em> por cada Feature fuente. Por defecto, esta opción está <em>marcada</em> y por lo tanto se crea una única geometría agregada. La <em>Figura 5</em> muestra el resultado (Capa <em>Buffer-2</em>, en rojo) de aplicar el mismo ancho de buffer que en el ejemplo anterior, pero con la opción de <em>Unir las geometrías</em> desmarcada.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b><em>Segmentos por cuadrante</em></b><br/>
+La opción <em>Segmentos por cuadrante</em> permite controlar el número de segmentos rectos que se usarán para redondear la curva resultante. Este parametro afecta a cómo se crean las áreas redondeadas sobre vértices, ya que uDig usa una aproximación lineal de las curvas.</li>
+</ul>
+
+
+<p><td class="confluenceTd"  valign="top"></td> <a href='http://udig.refractions.net/confluence//download/attachments/7962803/buffer_6_no_merge_result.png' target='buffer_6_no_merge_result.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962803/buffer_6_no_merge_result.png", "buffer_6_no_merge_result.png", "height=707,width=530,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962803/buffer_6_no_merge_result.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 5. Resultado de la operación con</b> <b><em>Unir las geometrías</em></b> <b>desmarcado.</b></p>
+<td class="confluenceTd"  valign="top"></td>
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr></tr></tbody></table>
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>

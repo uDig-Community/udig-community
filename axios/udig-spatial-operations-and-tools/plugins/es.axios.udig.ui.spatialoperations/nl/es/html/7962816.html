@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Spanish Users Guide : Operación Join Geom</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Spanish Users Guide : Operación Join Geom -->
+       <h1>Operación Join Geom</h1>
+       <p>Crea una nueva capa que contiene los features de la segunda capa que coincidan con la relación espacial indicada, siguiendo este estándar:
+<br clear="all" />
+<em>Primera Capa</em> <b>Relación</b> <em>Segunda Capa</em><br clear="all" />
+<br clear="all" />
+La convención de colores usada para representar las diferentes capas son:<br/>
+<img src="download/attachments/7962816/legend.png" align="left" border="0"/><br clear="all" />
+Las diferentes operaciones espaciales <em>Join Geom</em> son:
+<br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Contains"></a>Contains</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Todo punto de la otra Geometría es un punto de esta Geometría, y los interiores de las Geometrías tienen al menos un punto en común (inverso del Within). <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/contains.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Crosses"></a>Crosses</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Las Geometrías comparten alguno pero no todos los puntos interiores, y la dimensión de la intersección es por lo menos menor que la dimensión de una de las Geometrías. <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/crosses2.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Disjoint"></a>Disjoint</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Las geometrías no tienen ningún punto en común. <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/disjoint.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Equals"></a>Equals</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Las Geometrías tienen por los menos un punto en común, y ningún punto de ambas Geometrías esta en el exterior de la otra Geometría. <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/equals.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Intersects"></a>Intersects</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Las Geometrías tienen al menos un punto en común (inverso del Disjoint). <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/intersects.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Overlaps"></a>Overlaps</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Las Geometrías tienen algún punto en común pero no todos y tienen igual dimensión. <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/overlaps.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Touches"></a>Touches</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Las Geometrías tienen al menos un punto en común pero sus interiores no se intersectan. <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/touches.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="Operaci%C3%B3nJoinGeom-Within"></a>Within</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Todo punto de esta Geometría es un punto de la otra Geometría, y los interiores de ambas Geometrías tienen al menos un punto en común. <em>Ejemplo:</em><br/>
+<img src="download/attachments/7962816/within.png" align="left" border="0"/><br clear="all" />
+<br clear="all" /></p>
+
+<h2><a name="Operaci%C3%B3nJoinGeom-EjemplodeUso"></a>Ejemplo de Uso</h2>
+
+<p>Ir a la <em>Vista de las Operaciones Espaciales</em>, y seleccionar <em>Join Geom</em> de la lista de <em>Operaciones</em>.
+<br clear="all" />
+Se mostrarán las opciones de entrada específicos de la operación <em>Join Geom</em>.
+<br clear="all" /></p>
+<ol>
+	<li><b>Seleccionar la</b> <b><em>Primera Capa Fuente</em></b><b>:</b> En la lista desplegable de <em>Primera Capa</em>, seleccionar la primera <em>Capa</em> que quiera relacionar. Por defecto, la <em>Capa</em> actualmente seleccionada en la <em>Vista de Capas</em> es elegida.
+<br clear="all" /></li>
+	<li><b>Seleccionar la</b> <b><em>Relación</em></b><b>:</b> En la lista desplegable de la <em>Relación</em>, seleccione la <em>Relación</em> que desee usar entre las dos capas.
+<br clear="all" /></li>
+	<li><b>Seleccionar la</b> <b><em>Segunda Capa Fuente</em></b><b>:</b> En la lista desplegable de <em>Segunda Capa</em>, seleccionar la segunda <em>Capa</em> que quiera relacionar. Por defecto, no será seleccionada ninguna.
+<br clear="all" /></li>
+	<li><b>Seleccionar la</b> <b><em>Capa Resultado</em></b><b>:</b> En el cuadro de <em>Capa Resultado</em>, seleccionar el nombre de la <em>Capa</em> que desee crear para albergar el resultado de la Operación Espacial Join. Se propondrá un nombre por defecto para dicha <em>Capa</em>.
+<br clear="all" /></li>
+	<li><b>Realizar la operación:</b> Pulse el botón <em>Ejecutar</em> de la barra de herramientas de la Vista y la operación dará comienzo.</li>
+</ol>
+
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>

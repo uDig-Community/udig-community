@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="es.axios.udig.spatialoperations.ui">
+      <SpatialOperationBuilder
+            SOBuilder="es.axios.so.extension.copy.CopyBuilder"
+            SPATIAL_OPERATION_BUILDER_ID="es.axios.so.extension.spike.SpatialOperationBuilder1">
+      </SpatialOperationBuilder>
+   </extension>
+
+</plugin>

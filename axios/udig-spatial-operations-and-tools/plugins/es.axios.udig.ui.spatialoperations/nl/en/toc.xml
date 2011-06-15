@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--
+ This is the table of contents definition file for this plugin's help,
+ as required by the org.eclipse.help.toc extension point 
+ -->
+<toc label="Spatial Operations">
+	<topic label="Spatial Operations User Guide"  href="html/Spatial Operations Users Guide.html"> 
+		<topic label="Buffer Operation" href="html/Buffer Operation.html"/> 
+		<topic label="Clip Operation" href="html/Clip Operation.html"/> 
+		<topic label="Dissolve Operation" href="html/Dissolve Operation.html"/> 
+		<topic label="Fill Operation" href="html/Fill Operation.html"/> 
+		<topic label="Hole Cut Operation" href="html/Hole Cut Operation.html"/> 
+		<topic label="Intersect Operation" href="html/Intersect Operation.html"/> 
+		<topic label="Polygon to Line Operation" href="html/Polygon to Line Operation.html"/> 
+		<topic label="Spatial Join Operation" href="html/Spatial Join Operation.html"/> 
+		<topic label="Split Operation" href="html/Split Operation.html"/> 
+	</topic>
+</toc>

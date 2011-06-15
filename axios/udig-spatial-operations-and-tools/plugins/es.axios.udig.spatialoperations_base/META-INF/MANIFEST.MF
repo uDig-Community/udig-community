@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Axios Spatial Operations branding
+Bundle-SymbolicName: es.axios.udig.spatialoperations_base;singleton:=true
+Bundle-Vendor: Axios.es
+Bundle-Version: 1.3.1.qualifier

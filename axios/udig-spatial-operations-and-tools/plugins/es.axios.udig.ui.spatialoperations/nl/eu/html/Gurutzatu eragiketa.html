@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Basque User Guide : Gurutzatu eragiketa</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Basque User Guide : Gurutzatu eragiketa -->
+       <h1>Gurutzatu eragiketa</h1>
+       <p>Bi geruzen arteko gurutzaketa geometrikoa kalkulatzen du.</p>
+
+<p><em>Gurutzatu eragiketak</em> <b>bektore</b> moteko bi <em>Geruza iturrien</em> featureak hartzen ditu eta bere feature geometrien arteko gurutzaketa kalkulatzen du, ondorioa <em>Emaitza Geruza</em> baten gordez.<br/>
+<em>Emaitza Geruzak</em> featureren bat aukeratua badu, eragiketa beraien aurka burutuko da, bestalde, geruza guztiko featureak erabiliko dira.<br/>
+<em>Jatorrizko Geruzak</em> ez dira inola ere aldatuko. Lehen <em>Emaitz Geruza</em> berri bat sortzen da, edo erabiltzaileak emaitzak gorde ahal diren bektore geruza izatedun eta editatu ahal den bat zehaztu dezake.  </p>
+
+<h2><a name="Gurutzatueragiketa-Erabileraadibidea"></a>Erabilera adibidea</h2>
+
+<p><em>Gurutzatu eragiketak</em> nahi diren geruzetatik aukeratutako featuren gain lan egiten du, edo geruza guztien gain ez bada aukeraketa bat ezartzen.</p>
+
+<p>Adibide honetan, interesgarri diren geruzetariko batetik Feature bakar bat aukeratzen hasiko gara, <em>1 irudian</em> agertzen den bezala.<br/>
+<a href='http://udig.refractions.net/confluence//download/attachments/7963004/intersect_1_select.png' target='intersect_1_select.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7963004/intersect_1_select.png", "intersect_1_select.png", "height=789,width=1048,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7963004/intersect_1_select.png" align="absmiddle" border="0"/></a><br/>
+<b>1 irudia. Eragiketaren esparrua mugatu aukeraketa batekin.</b></p>
+
+<p><em>Eragiketa espazialen</em> bistara joan eta <em>Gurutzatu</em> aukeratu <em>eragiketen</em> zerrendatik.</p>
+
+<p><em>Gurutzatu eragiketaren</em>  sarrera espezifikoen aukerak agertuko dira (<em>2 irudia</em>).</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7963004/intersect_2_input.png' target='intersect_2_input.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7963004/intersect_2_input.png", "intersect_2_input.png", "height=380,width=1037,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7963004/intersect_2_input.png" align="absmiddle" border="0"/></a><br/>
+<b>2 irudia. Gurutzatu eragiketaren kontrolak.</b></p>
+<ul class="alternate" type="square">
+	<li><b>Jatorriko geruzak aukeratu</b><br/>
+<em>Jatorrian</em> gurutzatuko diren <em>Geruzak</em> aukeratu <em>Lehenengo Geruza</em> eta <em>Bigarren Geruzako</em> hedatze zerrendetan. Lehenik, <em>Geruzen Bistan</em> hautatutako <em>Geruza</em> izango da aukeratua <em>Lehenengo Geruzako</em> aukerarako. </li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Emaitza Geruza aukeratu</b><br/>
+<em>Emaitza Geruzako</em> hedatze zerrendak sortzeko Geruzaren izenarentzat proposamen bat edukiko du eragiketaren emaitzak gordetzeko. Dagoen bezala utzi daiteke, beste Geruza izen bat idatzi, edo <em>Emaitza Geruzako</em> hedatze zerrendan dagoen Geruza bat aukeratu. Azkenengo kasu honetan, eragiketaren emaitza aukeratutako Geruzan gordeko da.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Eragiketa burutu</b><br/>
+<em>Exekutatu</em> botoia sakatu Bistako tresnen barratik. Eragiketa hasiko da eta aurrerakuntza aurrerapen leiho baten agertuko da, 3 irudian agertzen den bezala. Eragiketak tarte bat iraun dezake burutzen, sarrerako geometrien kopuru eta konplexutasunarengatik.</li>
+</ul>
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7963004/intersect_3_progress.png' target='intersect_3_progress.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7963004/intersect_3_progress.png", "intersect_3_progress.png", "height=319,width=634,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7963004/intersect_3_progress.png" align="absmiddle" border="0"/></a><br/>
+<b>3 irudia. Aurrerakuntza leihoa</b></p>
+
+<p>Eragiketa bukatzean, emaitza gordetzeko Geruza berri bat sortua izan bada, jadaneko Marpara automatikoki gehitua izango da.</p>
+
+<p><em>4 irudiak</em> sortu berri den Geruza (<em>Intersect-1</em>, orlegiz) erakusten du Mapari gehitua, <em>Municipality</em> eta <em>Voting Areas</em> Geruzak gurutzatzen dituen featurearekin.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7963004/intersect_4_result.png' target='intersect_4_result.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7963004/intersect_4_result.png", "intersect_4_result.png", "height=789,width=1048,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7963004/intersect_4_result.png" align="absmiddle" border="0"/></a><br/>
+<b>4 irudia. Eragiketaren emaitza.</b></p>
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>
+

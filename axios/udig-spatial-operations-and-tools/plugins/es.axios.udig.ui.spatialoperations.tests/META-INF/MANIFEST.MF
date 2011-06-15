@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Spatial Operations Tests Plug-in
+Bundle-SymbolicName: es.axios.udig.ui.spatialoperations.tests
+Bundle-Version: 0.2.0.x
+Bundle-Vendor: Axios Engineering
+Bundle-Localization: plugin
+Require-Bundle: es.axios.udig.ui.spatialoperations,
+ org.junit,
+ net.refractions.udig.catalog,
+ net.refractions.udig.catalog.arcsde,
+ net.refractions.udig.catalog.shp,
+ es.axios.udig.ui.commons,
+ org.eclipse.core.runtime
+Export-Package: es.axios.udig.spatialoperations.process.internal;x-internal:=true,
+ es.axios.udig.ui.spatialoperations.ShapefileUtil,
+ es.axios.udig.ui.spatialoperations.internal.transactionmanager;x-internal:=true,
+ es.axios.udig.ui.spatialoperations.tasks

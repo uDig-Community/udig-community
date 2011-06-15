@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Spatial Operation Tutorial Plug-in
+Bundle-SymbolicName: es.axios.udig.spatialoperations.tutorial;singleton:=true
+Bundle-Version: 1.3.1.qualifier
+Bundle-Activator: es.axios.udig.spatialoperations.tutorial.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ es.axios.udig.ui.spatialoperations,
+ es.axios.udig.ui.commons,
+ net.refractions.udig.project.ui,
+ org.eclipse.emf.edit.ui
+Eclipse-LazyStart: true
+Export-Package: es.axios.udig.spatialoperations.tutorial,
+ es.axios.udig.spatialoperations.tutorial.process.centroid,
+ es.axios.udig.spatialoperations.tutorial.ui.centroid,
+ es.axios.udig.spatialoperations.tutorial.ui.centroid.images

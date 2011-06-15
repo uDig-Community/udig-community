@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--
+ This is the table of contents definition file for this plugin's help,
+ as required by the org.eclipse.help.toc extension point 
+ -->
+
+<toc label="Operaciones Espaciales">
+                    <topic label="Guía de Usuario Operaciones Espaciales" href="html/Operaciones Espaciales.html">
+			    <topic label="Operación Agujerear" href="html/8389120.html">
+                        </topic>
+			    <topic label="Operación Buffer" href="html/7962803.html">
+                        </topic>
+                            <topic label="Operación Cortar" href="html/7962812.html">
+                        </topic>
+                            <topic label="Operación Disolver" href="html/7962818.html">
+                        </topic>
+			    <topic label="Operación Dividir" href="html/8389071.html">
+                        </topic>
+                            <topic label="Operación Intersectar" href="html/7962814.html">
+                        </topic>
+                            <topic label="Operación Join Geom" href="html/7962816.html">
+                        </topic>
+			    <topic label="Operación Polygon to Line" href="html/8389112.html">
+                        </topic>
+			    <topic label="Operación Rellenar" href="html/8389117.html">
+                        </topic>
+        </topic>
+    </toc>

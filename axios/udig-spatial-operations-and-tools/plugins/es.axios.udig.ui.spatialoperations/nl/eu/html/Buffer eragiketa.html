@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Basque User Guide : Buffer eragiketa</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Basque User Guide : Buffer eragiketa -->
+       <h1>Buffer eragiketa</h1>
+       <p>Aukeratutako geometrien inguruan buffer azalera bat kalkulatzen du.<br/>
+<em>Buffer eragiketak</em> <b>bektore</b> motako <em>jatorri</em> geruza batetik hartzen ditu featureak eta bere inguruan zehazturiko distantzia batetako buffer azalera bat sortzen du, ondorioa <em>Emaitz Geruza</em> batetan gordez.<br/>
+<em>Jatorrizko Geruzak</em> featureak aukeratuak baditu, eragiketa beraien aurka burutua izango da, bestalde, geruza guztiko featureak erabiliko dira.<br/>
+<em>Jatorrizko Geruza</em> ez da inola ere aldatzen. Lehen <em>Emaitz Geruza</em> berri bat sortzen da, edo erabiltzaileak emaitzak gorde ahal diren bektore geruza izatedun eta editatu ahal den  bat zehaztu dezake.  </p>
+
+<h2><a name="Buffereragiketa-Erabileraadibidea"></a>Erabilera adibidea</h2>
+
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+<td class="confluenceTd"  valign="top"></td>
+<p><em>Eragiketa espazialen</em> Bistara joan, eta aukeratu <em>Buffer</em> <em>Eragiketen</em> menuan.</p>
+
+<p>Buffer eragiketaren sarrera espezifikoen aukerak agertuko dira.</p>
+<ul class="alternate" type="square">
+	<li><b><em>Jatorriko Geruza</em></b> <b>aukeratu</b><br/>
+<em>Jatorrik Geruzako</em>  hedatze zerrendan, aukeratu buffer azalera sortu nahi duzun <em>Geruza</em>. Lehenik, <em>Geruzen Bistan</em> hautatutako <em>Geruza</em> aukeratuko da.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b><em>Emaitzako Geruza</em></b> <b>aukeratu</b><br/>
+<em>Emaitza Geruzako</em> hedatze zerrendak eragiketaren emaitzak gordetzeko sorturiko Geruzarentzat proposaturiko geruza izen bat edukiko du. Dagoen bezala utzi dezakezu, beste Geruza izen bat idatzi, edo <em>Emaitza Geruzako</em> hedatze zerrendan dagoen Geruza bat aukeratu.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b><em>Distantzia</em></b> <b>eta</b> <b><em>Unitateak</em></b> <b>ezarri</b><br/>
+<em>Aukeren</em> atalean, eskalar balioa zehaztu bufferraren azaleraren zabalera kalkulatzeko  jatorriko Featuren inguruan, eta aukeratu zein neurri-unitatekoa izan behar den bufferraren zabalera. <b>Maparean</b> edo <b>Geruzaren</b> unitateen artean aukeratu dezakezu edo beste neurri-unitate bat aukeratu <em>Unitateen</em> zerrendatik.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Eragiketa burutu</b><br/>
+Bistako tresnen barratik <b><em>Exekutatu</em></b> botoia sakatu eta eragiketa hasiko da.</li>
+</ul>
+</tr></tbody></table>
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962980/buffer_1.png' target='buffer_1.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962980/buffer_1.png", "buffer_1.png", "height=944,width=1047,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962980/buffer_1.png" align="absmiddle" border="0"/></a><br/>
+<b>1 irudia. Buffer eragiketaren erabiltzaile interfazea.</b></p>
+<td class="confluenceTd"  valign="top">
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+<p>Behin <em>Exekutatu</em> botoia sakatu ondoren, eragiketaren aurrerakuntza prozesu leiho baten agertuko da, <em>2 irudian</em> agertzen den bezala. Eragiketak tarte bat iraun dezake burutzen, sarrerako geometrien kopuru eta konplexutasunarengatik.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962980/buffer_3.png' target='buffer_3.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962980/buffer_3.png", "buffer_3.png", "height=323,width=641,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962980/buffer_3.png" align="absmiddle" border="0"/></a><br/>
+<b>2 irudia. Aurrerakuntza leihoa.</b></p></tr></tbody></table></td>
+<p>Eragiketa bukatu ondoren, emaitza gordetzeko Geruza berri bat sortu bada, automatikoki jadaneko Mapan gehitua izango da.</p>
+
+<p><em>3 irudiak</em> sortutako Geruza (<em>Buffer-1</em>, orlegiz) erakusten du mapan gehitutakoa, Feature <b>batekin</b> zeinen geometria zehaztutako bufferra lehen geometriei jatorri Featuretan aplikatzearen gehitutako emaitza da. </p>
+<td class="confluenceTd"  valign="top"></td>
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962980/buffer_4.png' target='buffer_4.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962980/buffer_4.png", "buffer_4.png", "height=657,width=530,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962980/buffer_4.png" align="absmiddle" border="0"/></a><br/>
+<b>3 irudia. Emaitza Geruza.</b></p>
+<td class="confluenceTd"  valign="top">
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr>
+
+<h2><a name="Buffereragiketa-Aukeraaurreratuak"></a>Aukera aurreratuak</h2>
+
+<p><em>Buffer eragiketak</em> aukera aurreratu batzuk ditu prozesuaren alde batzuk kontrolatzeko ezarri ahal direnak.</p>
+
+<p>Adibidez, <em>4 irudiak</em> <b>Geometriak elkartu</b> eta <b>Segmentuak koadranteko</b> aukera aurreratuentzako kontrolak erakusten ditu.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962980/buffer_5_no_merge.png' target='buffer_5_no_merge.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962980/buffer_5_no_merge.png", "buffer_5_no_merge.png", "height=106,width=551,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962980/buffer_5_no_merge.png" align="absmiddle" border="0"/></a><br/>
+<b>4 irudia. Aukera aurreratuak.</b></p></tr></tbody></table></td>
+<ul class="alternate" type="square">
+	<li><b><em>Geometriak elkartu</em></b><br/>
+<em>Geometriak elkartu</em> aukerak jatorriko Feature multzo guztiarentzat gehitutako geometria bakar bat sortu behar den kontrolatzen du, edo alderantziz jatorriko Feature bakoitzeko <em>Emaitza Geruzan</em> Feature berri bat sortu behar den. Lehenik, aukera hau <em>markatua</em> dago, eta ondorioz gehituriko geometria bakar bat sortzen da. <em>5 irudiak</em> aurreko adibidearen bezalako bufferraren zabalera berdina aplikatzearen emaitza (<em>Buffer-2</em> geruza, gorriz) erakusten du, baina <em>Geometriak elkartu</em> aukera markatu gabe.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b><em>Segmentuak koadranteko</em></b><br/>
+<em>Segmentuak koadranteko</em> aukerak emaitzako kurba biribiltzeko zenbat segmentu zuzen erabiliko diren kontrolatzea uzten du.</li>
+</ul>
+
+
+<p><td class="confluenceTd"  valign="top"></td> <a href='http://udig.refractions.net/confluence//download/attachments/7962980/buffer_6_no_merge_result.png' target='buffer_6_no_merge_result.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962980/buffer_6_no_merge_result.png", "buffer_6_no_merge_result.png", "height=707,width=530,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962980/buffer_6_no_merge_result.png" align="absmiddle" border="0"/></a><br/>
+<b>5 irudia. Eragiketaren emaitza</b> <b><em>Geometriak elkartu</em></b> <b>markatu gabe.</b></p>
+<td class="confluenceTd"  valign="top"></td>
+<table class="sectionMacro" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr></tr></tbody></table>
+
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>
+

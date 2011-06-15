@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Axios Editing tools branding
+Bundle-SymbolicName: es.axios.udig.editingtools_base;singleton:=true
+Bundle-Vendor: Axios.es
+Bundle-Version: 1.3.3.qualifier

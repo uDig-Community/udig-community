@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Basque User Guide : Polygon to Line eragiketa</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Basque User Guide : Polygon to Line eragiketa -->
+       <h1>Polygon to Line eragiketa</h1>
+       
+<p>Poligono geruza bat LineString motako geruza baten bihurtzen du.</p>
+
+
+<p><em>Polygon to Line eragiketak</em> jatorri geruzaren featureak hartzen ditu eta LineString featuretan bihurtzen ditu.</p>
+
+
+<p>Emaitza geruza LineString edo MultiLineString motakoa izango da, jatorri geruzaren menpe egongo da, eta geruza berri bat edo dagoen bat izan daiteke.</p>
+
+<h2><a name="PolygontoLineeragiketa-Erabileraadibidea"></a>Erabilera adibidea</h2>
+
+<p>Adibide honetan countries.shp geruzarekin <em>Polygon to Line eragiketa</em> burutuko dugu.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389155/ptl-before.png' target='ptl-before.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389155/ptl-before.png", "ptl-before.png", "height=721,width=916,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389155/ptl-before.png" align="absmiddle" border="0"/></a><br/>
+<b>1 Irudia. Eragiketaren aurretik.</b></p>
+
+<p><em>Eragiketa Espazialen</em> Bistara goaz, eta <em>Polygon to Line</em> aukeratuko dugu <em>Eragiketen</em> menuan.<br/>
+<em>Polygon to Line Eragiketaren</em> aukera espezifikoak agertzen dira.</p>
+
+
+<p>Eragiketaren sarrerako balioak adierazi behar ditugu, <em>2 irudian</em> agertzen den bezala:</p>
+<ul class="alternate" type="square">
+	<li><b><em>Jatorri</em></b> <b>Geruza aukeratu</b><br/>
+<em>Jatorri</em> hedatze zerrendan, bihurtuko diren Featureak dituen Geruza aukeratu.</li>
+	<li><b><em>Emaitzako</em></b> <b>Geruza aukeratu</b><br/>
+<em>Geruza</em> hedatze zerrendan, lehen Geruza izen bat proposatuko da eragiketa sortuko duen geruzarentzat. Izena aldatu dezakezu edo eragiketak gordeko diren dagoen Geruza bat aukeratu. </li>
+</ul>
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389155/ptl-ui.png' target='ptl-ui.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389155/ptl-ui.png", "ptl-ui.png", "height=308,width=914,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389155/ptl-ui.png" align="absmiddle" border="0"/></a><br/>
+<b>2 irudia. Sarrerako eta emaitzako geruzak zehaztu.</b></p>
+
+<ul class="alternate" type="square">
+	<li><b>Eragiketa burutu</b><br/>
+Sarrerako eta emaitzako geruzak zehaztuak direnean, <em>Eragiketa Espazialen</em> tresnen barratik <em>Exekutatu</em> botoia sakatu. Eragiketa prozesatzen hasiko da eta bere aurrerakuntza aurrerapen leiho baten agertuko da, <em>3 irudian</em> agertzen den bezala. Eragiketak tarte bat iraun dezake burutzen, sarrerako geometrien kopuru eta konplexutasunarengatik.</li>
+</ul>
+
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389155/ptl-progress.png' target='ptl-progress.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389155/ptl-progress.png", "ptl-progress.png", "height=243,width=562,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389155/ptl-progress.png" align="absmiddle" border="0"/></a><br/>
+<b>3 irudia. Aurrerakuntza leihoa.</b></p>
+
+<p>Eragiketa bukatzen denean, emaitza gordetzeko geruza berri bat sotu bada, jadaneko Marpara automatikoki gehitua izango da.</p>
+
+<p><em>4 irudiak</em> sortu berri den Geruza (Polygon to Line_1) erakusten du Mapari gehitua, <em>Jatorri</em> geruzaren bihurketa aplikatzearen emaitzako featurekin.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389155/ptl-after.png' target='ptl-after.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389155/ptl-after.png", "ptl-after.png", "height=426,width=913,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389155/ptl-after.png" align="absmiddle" border="0"/></a><br/>
+<b>4 irudia. Emaitza Geruza.</b></p>
+
+<h3><a name="PolygontoLineeragiketa-Lerroakesplotatu."></a>Lerroak esplotatu.</h3>
+
+<p><em>Polygon to Line</em> eragiketak poligonoak esplotatzearen aukera du, hau da, poligonoaren lerro segmentu bakoitza LineString feature bat izango da.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389155/ptl-explode.png' target='ptl-explode.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389155/ptl-explode.png", "ptl-explode.png", "height=308,width=914,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389155/ptl-explode.png" align="absmiddle" border="0"/></a><br/>
+<b>5 irudia. Esplotatu aukeratu</b>.</p>
+
+
+<p>Kasu honetan, Irlanda herria aukeratuko dugu eta esplotatu aukera txekeatu ondoren, eragiketa exekutatuko dugu emaitza bezala hurrengoa emanez:</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/8389155/ptl-explode1.png' target='ptl-explode1.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/8389155/ptl-explode1.png", "ptl-explode1.png", "height=661,width=830,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/8389155/ptl-explode1.png" align="absmiddle" border="0"/></a><br/>
+<b>6 irudia. Esplotatutako lerroak</b></p>
+
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>
+

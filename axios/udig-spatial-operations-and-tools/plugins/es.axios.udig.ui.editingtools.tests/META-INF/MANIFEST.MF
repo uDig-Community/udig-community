@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Editing Tools Tests Plug-in
+Bundle-SymbolicName: es.axios.udig.ui.editingtools.tests
+Bundle-Version: 0.1.0
+Bundle-Vendor: Axios Engineering
+Bundle-Localization: plugin
+Eclipse-RegisterBuddy: es.axios.udig.ui.editingtools
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.refractions.udig.ui,
+ net.refractions.udig.project.ui,
+ net.refractions.udig.tools.edit,
+ net.refractions.udig.project.tests.ui,
+ es.axios.udig.ui.editingtools,
+ net.refractions.udig.project.edit,
+ es.axios.udig.ui.commons,
+ org.junit4

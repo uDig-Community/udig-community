@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="es.axios.udig.extensions.tutorials"
+      label="Tutorials"
+      version="1.3.1.qualifier">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="es.axios.udig.ui.spatialoperations"/>
+      <import plugin="es.axios.udig.ui.commons"/>
+      <import plugin="net.refractions.udig.project.ui"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+   </requires>
+
+   <plugin
+         id="es.axios.udig.spatialoperations.tutorial"
+         download-size="0"
+         install-size="0"
+         version="1.3.0.m5"
+         unpack="false"/>
+
+</feature>

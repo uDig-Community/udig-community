@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Basque User Guide : Join Geom eragiketa</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Basque User Guide : Join Geom eragiketa -->
+       <h1>Join Geom eragiketa</h1>
+       <p>Adierazitako erlazio espazialarekin bat eginten duten bigarren geruzako featureak dituen geruza berri bat sortzen du, estandar hau jarraituz:
+<br clear="all" />
+<em>Lehenengo Geruza</em> <b>Erlazioa</b> <em>Bigarren Geruza</em><br clear="all" />
+<br clear="all" />
+Geruza desberdinak adierazteko erabilitako koloreen araua hurrengo hau da: <br/>
+<img src="download/attachments/7963007/legend.png" align="left" border="0"/><br clear="all" />
+<em>Join Geom</em> eragiketa espazial desberdinak honako hauek dira:
+<br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Contains"></a>Contains</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Beste geometriaren puntu bakoitza geometria honen puntu bat da, eta geometrien barnealdeek gitxienez puntu bat dute amankomunean (Within-aren alderantzizkoa). <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/contains.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Crosses"></a>Crosses</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometriek barne puntu batzuk berberak dituzte baina ez guztiak, eta gurutzaketaren dimentsioa gutxienez geometria baten baino txikiagoa da. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/crosses2.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Disjoint"></a>Disjoint</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometriek ez dute punturik amankomunean. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/disjoint.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Equals"></a>Equals</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometriek gitxienez puntu bat amankomunean dute, eta geometria bakoitzako puntu bat ere ez dago beste geometriaren kanpoan. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/equals.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Intersects"></a>Intersects</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometriek gitxienez puntu bat amankomunean dute. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/intersects.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Overlaps"></a>Overlaps</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometriek puntu bateren bat amankomunean dute, baina ez guztiak, eta dimentsio berbera dute. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/overlaps.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Touches"></a>Touches</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometriek gitxienez puntu bat amankomunean dute baina beraien barnealdeak ez dira gurutzatzen. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/touches.png" align="left" border="0"/><br clear="all" /></p>
+<ul>
+	<li><h4><a name="JoinGeomeragiketa-Within"></a>Within</h4></li>
+</ul>
+
+
+<p><br clear="all" />
+Geometria honen puntu bakoitza beste geometriaren puntu bat da, eta geometria bakoitzaren barnealdeek puntu bat dute amankomunean. <em>Adibidea:</em><br/>
+<img src="download/attachments/7963007/within.png" align="left" border="0"/><br clear="all" />
+<br clear="all" /></p>
+
+<h2><a name="JoinGeomeragiketa-Erabileraadibidea"></a>Erabilera adibidea</h2>
+
+<p><em>Eragiketa Espazialen</em> Bistara joan, eta <em>Join Geom</em> aukeratu <em>Eragiketen</em> zerrendatik.
+<br clear="all" />
+<em>Join Geom</em> eragiketaren sarrera aukerak agertuko dira.
+<br clear="all" /></p>
+<ol>
+	<li><b><em>Lehenengo Jatorri Geruza</em></b> <b>aukeratu:</b> <em>Lehenengo Geruzako</em> hedatze zerrendan, erlazionatu nahi duzun lehenengo <em>Geruza</em> aukeratu. Lehenik, <em>Geruzen Bistan</em> aukeratutako <em>Geruza</em> izango da hautatua.
+<br clear="all" /></li>
+	<li><b><em>Erlazioa</em></b> <b>aukeratu:</b> <em>Erlazioko</em> hedatze zerrendan, bi geruzen artean erabili nahi    duzun <em>Erlazioa</em> aukeratu.
+<br clear="all" /></li>
+	<li><b><em>Bigarren Jatorri Geruza</em></b> <b>aukeratu:</b> <em>Bigarren Geruzako</em> hedatze zerrendan, erlazionatu nahi duzun bigarren <em>Geruza</em> aukeratu. Lehenik, ez da bat ere aukeratua izango.
+<br clear="all" /></li>
+	<li><b><em>Emaitza Geruza</em></b> <b>aukeratu:</b> <em>Emaitza Geruzaren</em> karratuan, sortu nahi duzun <em>Geruzaren</em> izena aukeratu Join Eragiketa Espazialaren emaitza gordetzeko. Lehen izen bat proposatuko da <em>Geruza</em> horrentzat.
+<br clear="all" /></li>
+	<li><b>Eragiketa burutu:</b> Bistako tresnen barratik <b><em>Exekutatu</em></b> botoia sakatu eta eragiketa hasiko da.</li>
+</ol>
+
+
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>
+

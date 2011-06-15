@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../book.css" type="text/css" />
+        <title>Spanish Users Guide : Operación Cortar</title>
+    </head>
+    <body BGCOLOR="#FFFFFF">
+       <!-- Spanish Users Guide : Operación Cortar -->
+       <h1>Operación Cortar</h1>
+       
+<p>Calcula la diferencia geométrica entre dos Capas</p>
+
+<p>La <em>Operación Cortar</em> toma los features de una <em>Capa Cortante</em> de tipo <b>vector</b> y una <em>Capa Fuente</em> de tipo <b>vector</b> y las usa para calcular la diferencia geométrica entre las capas <em>Fuente</em> y <em>Cortante</em>, almacenando el resultado en una tercera <em>Capa</em>.</p>
+
+<p>Es posible usar los features seleccionados, si se establece una selección, en ambas Capas de <em>corte</em> y de <em>fuente</em> para limitar el ámbito de la operación.</p>
+
+<p>Ninguna de las Capas usadas para calcular la diferencia es modificada bajo ningún concepto. Una tercera Capa es creada por defecto, pero el usuario puede seleccionar una capa existente para almacenar el resultado.</p>
+
+<h2><a name="Operaci%C3%B3nCortar-EjemplodeUso"></a>Ejemplo de Uso</h2>
+
+<p>Empezaremos este ejemplo de uso seleccionando un único feature de la capa <em>municipalities</em> que usaremos como máscara de corte contra la capa <em>voting areas</em>.<br/>
+La <em>Figura 1</em> muestra el Feature seleccionado, "Victoria" en la capa de municipios.</p>
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962812/clip_1_select_clip_mask.png' target='clip_1_select_clip_mask.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962812/clip_1_select_clip_mask.png", "clip_1_select_clip_mask.png", "height=447,width=522,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962812/clip_1_select_clip_mask.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 1. Definir la máscara de corte mediante una selección por BBox.</b></p>
+
+<p>Nos dirigimos a la Vista de <em>Operaciones Espaciales</em>, y seleccionamos <em>Cortar</em> en el menú de <em>Operaciones</em>.<br/>
+Aparecen las opciones específicas de la <em>Operación Cortar</em>.</p>
+
+<p>Debemos indicar los valores de entrada de la operación, como se muestra en la <em>Figura 2</em>:</p>
+<ul class="alternate" type="square">
+	<li><b>Seleccionar la Capa</b> <b><em>Fuente</em></b><br/>
+En la lista desplegable <em>Capa a Cortar</em>, seleccionar la Capa que contenga los Features a los que aplicar la diferencia con la Capa de corte.</li>
+	<li><b>Seleccionar la Capa de</b> <b><em>Corte</em></b><br/>
+En la lista desplegable <em>Cortar con</em> , seleccionar la capa a usar como máscara de corte.</li>
+	<li><b>Seleccionar la Capa</b> <b><em>Resultante</em></b><br/>
+En la lista desplegable <em>Capa</em>, se propondrá un nombre de Capa por defecto para la capa que creará la operación. Puedes cambiar el nombre o seleccionar una Capa existente donde almacenar los resultados.<br/>
+<a href='http://udig.refractions.net/confluence//download/attachments/7962812/clip_2_input_params.png' target='clip_2_input_params.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962812/clip_2_input_params.png", "clip_2_input_params.png", "height=370,width=1037,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962812/clip_2_input_params.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 2. Definir las capas de entrada y resultante.</b></li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li><b>Realizar la operación</b><br/>
+Una vez que las capas de entrada y la resultante sean definidas, pulsar el botón <em>Ejecutar</em> de la barra de herramientas de las <em>Operaciones Espaciales</em>. La operación comenzará a procesar y su progreso se mostrará en un diálogo de progreso, como se muestra en la <em>Figura 3</em>. La operación puede tardar un rato en completarse, dependiendo del número y complejidad de las geometrías de entrada.</li>
+</ul>
+
+
+<p><a href='http://udig.refractions.net/confluence//download/attachments/7962812/clip_3_progress.png' target='clip_3_progress.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962812/clip_3_progress.png", "clip_3_progress.png", "height=317,width=658,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962812/clip_3_progress.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 3. Diálogo de progreso.</b></p>
+
+<p>Una vez que finaliza la Operación, si se creó una nueva capa para almacenar el resultado, ésta será automáticamente añadida al Mapa actual.</p>
+
+<p>La <em>Figura 4</em> muestra la recién creada Capa (Cortar-1, en verde) añadida al mapa, con los Features resultantes de aplicar las diferencias entre las Capas <em>Fuente</em> y <em>Cortante</em>.<br/>
+<a href='http://udig.refractions.net/confluence//download/attachments/7962812/clip_4_result.png' target='clip_4_result.png' onClick='window.open("http://udig.refractions.net/confluence//download/attachments/7962812/clip_4_result.png", "clip_4_result.png", "height=507,width=1037,menubar=no,status=no,toolbar=no"); return false;'><img src="download/thumbnails/7962812/clip_4_result.png" align="absmiddle" border="0"/></a><br/>
+<b>Figura 4. Capa Resultado</b></p>
+
+<small>(c) Copyright (c) 2004-2008 Refractions Research Inc. and others.</small>
+    </body>
+</html>

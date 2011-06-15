@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="es.axios.udig.georeferencing"
+      label="Image Georeferencing"
+      version="1.0.0.qualifier"
+      provider-name="Axios"
+      plugin="es.axios.udig.georeferencing_base">
+
+   <description url="http://www.example.com/description">
+      Image Georeferencig
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Image Georeferencing for uDig
+Axios Engineering
+http://www.axios.es 
+(C) 2006, Axios Engineering S.L.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Axios Engineering S.L. agrees to license under Lesser General Public License (LGPL).
+You can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; version 2.1 of the License.
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details
+   </license>
+
+   <url>
+      <update label="Axios uDig Image Georeferencing" url="http://www.axios.es"/>
+      <discovery label="uDig Community Site" url="http://udig.refractions.net/files/update/1.2/community/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="net.refractions.udig.project.ui" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="net.refractions.udig.mapgraphic" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="net.refractions.udig.tools.edit"/>
+      <import plugin="es.axios.udig.ui.commons" version="1.3.3" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="es.axios.udig.georeferencing"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="es.axios.udig.ui.commons"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="es.axios.udig.georeferencing_base"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

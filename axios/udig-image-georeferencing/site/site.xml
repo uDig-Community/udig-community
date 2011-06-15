@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/es.axios.udig.georeferencing_1.0.0.201105231024.jar" id="es.axios.udig.georeferencing" version="1.0.0.201105231024">
+      <category name="es.axios.georeferencing"/>
+   </feature>
+   <category-def name="es.axios.georeferencing" label="es.axios.georeferencing"/>
+</site>

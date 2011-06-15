@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Axios Image Georeferencing branding
+Bundle-SymbolicName: es.axios.udig.georeferencing_base;singleton:=true
+Bundle-Vendor: Axios.es
+Bundle-Version: 1.0.0.qualifier

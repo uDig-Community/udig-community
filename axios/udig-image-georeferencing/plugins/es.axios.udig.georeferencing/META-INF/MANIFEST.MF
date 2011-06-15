@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Image Georeferencing
+Bundle-SymbolicName: es.axios.udig.georeferencing;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: es.axios.udig.georeferencing.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ net.refractions.udig.project.ui;bundle-version="1.2.0",
+ es.axios.udig.ui.commons;bundle-version="1.3.3",
+ net.refractions.udig.mapgraphic;bundle-version="1.2.0",
+ net.refractions.udig.tools.edit,
+ org.eclipse.help
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Axios.es
+Export-Package: es,
+ es.axios,
+ es.axios.udig,
+ es.axios.udig.georeferencing,
+ es.axios.udig.georeferencing.internal;x-internal:=true,
+ es.axios.udig.georeferencing.internal.ui;x-internal:=true,
+ es.axios.udig.georeferencing.ui,
+ es.axios.udig.georeferencing.ui.images

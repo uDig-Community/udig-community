@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Mauricio Pazos">
+	<META NAME="CREATED" CONTENT="20070725;17383400">
+	<META NAME="CHANGEDBY" CONTENT="Mauricio Pazos">
+	<META NAME="CHANGED" CONTENT="20080121;20341300">
+	<META NAME="CHANGEDBY" CONTENT="Mauricio Pazos">
+	<META NAME="CHANGEDBY" CONTENT="Mauricio Pazos">
+	<META NAME="CHANGEDBY" CONTENT="Aritz Davila">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm }
+		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Arial Unicode MS"; font-size: 14pt; font-style: italic }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-GB" DIR="LTR">
+<H1 ALIGN=CENTER>Spatial Operations &amp; Editing Tools</H1>
+<H2 CLASS="western">1. Includes</H2>
+<UL>
+	<LI><P>es.axios.udig.extensions_x.x.x.x</P>
+	<LI><P>es.axios.udig.ui.commons_x.x.x.x</P>
+	<LI><P>es.axios.udig.ui.editingtools_x.x.x.x</P>
+	<LI><P>es.axios.udig.ui.spatialoperations_x.x.x.x</P>
+</UL>
+<H2 CLASS="western">2. Release Notes 1.3.0.m7</H2>
+<H2 CLASS="western">2.1 Improvement</H2>
+<P>137 - Split tool now supports the use of closed lines as a split line. </P>
+<P>138 - Refactor - The SplitFeatureBuilder class was created in order to simplify the use of the split process (split plus add vertex). </P>
+
+<H2 CLASS="western">3. Release Notes 1.3.0.m6</H2>
+<H2 CLASS="western">3.1 Patch</H2>
+<P>133 - Sometimes the original feature is not deleted. </P>
+<P>134 - Drawing an split line using a hole's vertex does not produce the expected result </P>
+<P>135 - An split line, using the geometry's vertexes that will be split, does not produce the expected features</P> 
+
+
+<H2 CLASS="western">4. Release Notes 1.3.0.m5</H2>
+<H2 CLASS="western">4.1 Patch</H2>
+<P>87  - If the map's crs and the layer's crs are different the parallel tool does not produce any result. </P>
+<P>111 - In some case the parallel tool generates “peaks” in the parallel result. </P>
+
+<H2 CLASS="western">4.2 Improvement</H2>
+<P>84  - Split must show a message when the split line has the initial point equal to the last point.   </P>
+<P>122 - The behaviour required by simple spatial operations with only two parameters (source and target layer) was refactoring  in SimplePresenter and SimpleCommand.</P>
+
+
+<H2 CLASS="western">5. Release Notes 1.3.0.m4</H2>
+<H2 CLASS="western">5.1 Patch</H2>
+<P>78 – Parallel - Perform an analisys of the resultant geometry to get rid off spurious nodes. / Realizar un análisis a la geometría resultante para eliminar nodos espúreos. </P>
+<H2 CLASS="western">6. Release Notes 1.3.0.m3</H2>
+<H2 CLASS="western">6.1 Patch</H2>
+<P>62 – Split - Split between holes using as split line a piece of the border off one holes produces an incorrect new hole. / Split entre agujeros usando como linea de split parte del border de uno de los agujeros produce un nuevo agujero. </P>
+<H2 CLASS="western">6.2 New Feature</H2>
+<P>79 – Spatial Operation - Buffer. It was added the new cap styles. / Se agregaron los nuevos estilos para los "gorros" del buffer. </P>
+<H2 CLASS="western">7. Release Notes 1.3.0.m2</H2>
+<H2 CLASS="western">7.1 Improvement</H2>
+<P>64 – Parallel - Improve parallel algorithm. / Mejorar el algoritmo de la paralela..</P>
+<H2 CLASS="western">8. Release Notes 1.3.0.m1</H2>
+<H2 CLASS="western">8.1 Task</H2>
+<P>64 – Align with udig 1.2-m6. / Alinear con udig 1.2-m6.</P>
+</BODY>
+</HTML>

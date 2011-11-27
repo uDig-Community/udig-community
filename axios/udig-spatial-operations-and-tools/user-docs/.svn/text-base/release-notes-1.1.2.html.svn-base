@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Mauricio Pazos">
+	<META NAME="CREATED" CONTENT="20070725;17383400">
+	<META NAME="CHANGEDBY" CONTENT="Mauricio Pazos">
+	<META NAME="CHANGED" CONTENT="20080121;20341300">
+	<META NAME="CHANGEDBY" CONTENT="Mauricio Pazos">
+	<META NAME="CHANGEDBY" CONTENT="Mauricio Pazos">
+	<META NAME="CHANGEDBY" CONTENT="Aritz Davila">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm }
+		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Arial Unicode MS"; font-size: 14pt; font-style: italic }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-GB" DIR="LTR">
+<H1 ALIGN=CENTER>Spatial Operations &amp; Editing Tools</H1>
+<H2 CLASS="western">1. Includes</H2>
+<UL>
+	<LI><P>es.axios.udig.extensions_x.x.x.x</P>
+	<LI><P>es.axios.udig.ui.commons_x.x.x.x</P>
+	<LI><P>es.axios.udig.ui.editingtools_x.x.x.x</P>
+	<LI><P>es.axios.udig.ui.spatialoperations_x.x.x.x</P>
+</UL>
+<H2 CLASS="western">2. Release Notes 1.1.2</H2>
+<H2 CLASS="western">2.1 Improvement</H2>
+<P>UDIGF-275 – Split - Improve split behaviour. Allow add vertex to neighbor geometries. / Mejorar el comportamiento del split. Permitir agregar vertices a las geometrias vecinas. </P>
+<H2 CLASS="western">3. Release Notes 1.1.1</H2>
+<H2 CLASS="western">3.1 Improvement</H2>
+<P>UDIGF-267 – Merge - Allow to delete a feature from the list doing a bounding box with the Ctrl key being pushed. / Poder eliminar de la lista un feature realizando un bounding box con el Ctrl pulsado.</P>
+<P>UDIGF-268 – Merge - Add a context menu with the delete option in the list containing the source features. / Agregar un menu contextual con la opción de eliminar en la lista que contiene los features fuente. </P>
+<H2 CLASS="western">4. Release Notes 1.1.0.rc11</H2>
+<H2 CLASS="western">4.1 Patch</H2>
+<P>UDIGF-245 – Spatial Operation - Failure getting unit name. / Fallo al obtener el unit name.</P>
+<P>UDIGF-207 – Spatial Operation - During seasons, keep the state visible/invisible of the demo panel. / Mantener el estado visible/invisible del panel de demo.</P>
+<H2 CLASS="western">4.2 Improvement</H2>
+<P>UDIGF-237 – Merge - For each selection, add the selected feature to the view. / Por cada seleccion, el feature seleccionado ir agregandolo a la vista.</P>
+<H2 CLASS="western">5. Release Notes 1.1.0.rc10</H2>
+<H2 CLASS="western">5.1 Patch</H2>
+<P>UDIGF-235 – Spatial Operation - Correct transaction handling when using an existent feature store. / Corregir el manejo de las transacciones cuando se usaba un feature store que ya existia.</P>
+<P>UDIGF-234 – Spatial Operation - Improve the render of the result under windows xp and filter at the beginning the target layer combo box. / En windows xp no se renderiza el resultado y el combo con los target layer no se filtra al inicio.</P>
+<H2 CLASS="western">6. Release Notes 1.1.0.rc9</H2>
+<H2 CLASS="western">6.1 New Feature</H2>
+<P>UDIGF-215 – Precision Parallel - Add a new geometry to the layer pushing the OK button. / En la precision parallel tool, cuando agregas una geometria al layer a traves del boton OK.</P>
+<P>UDIGF-212 – Precision Parallel - Add an information panel to the precision tools view. / Agregar un information view a la vista de las precision tools.</P>
+<P>UDIGF-224 – Help - Update the help document for the merge(add the new functionality) and create the document of the Precision Parallel. / Agregar al Help la nueva funcionalidad del merge y crear el help para las precision parallel.</P>
+<H2 CLASS="western">6.2 Improvement</H2>
+<P>UDIGF-217 – Merge - Highlight the selected feature when is clicked on the tree view. / Destacar el feature a fusionar cuando es seleccionado en el tree view.</P>
+<P>UDIGF-225 – Merge - Show the merge dialog inside a view. / Mostrar el dialogo del merge en una vista.</P>
+<P>UDIGF-200 – Refactor Process encapsulating the algorithms into Strategies(Clip and Intersect). / Refactorizar Process encapsulando algoritmos en Strategies. Clip e Intersect.</P>
+<P>UDIGF-127 – Merge - Refactor merge for allowing other selections. / Refactorizar Merge para permitir otras selecciones.</P>
+<H2 CLASS="western">7. Release Notes 1.1.0.rc8</H2>
+<H2 CLASS="western">7.1 Patch</H2>
+<P>UDIGF-201 – SOView - Typing a new layer name each key stroke makes the cursor go back. / Escribiendo el nombre de un nuevo layer, cada pulsación de tecla pone el cursor de texto al comienzo.</P>
+<P>UDIGF-202 – SOView - Panels doesn't show the scroll. / Los paneles no muestran el scroll.</P>
+<P>UDIGF-203 – SOView - When selecting layers each time a layer is selected with a combo box the other selections are reset to defaults. / Los layer seleccionados en la vista y demás parámetros son inicializados cuando la vista obtiene el foco.</P>
+<H2 CLASS="western">8. Release Notes 1.1.0.rc7</H2>
+<H2 CLASS="western">8.1 Patch</H2>
+<P>UDIGF-193 – Merge - Doesn't allow make merge of two linestrings. / No permite realizar el merge de linestrings.</P>
+<H2 CLASS="western">8.2 Improvement</H2>
+<P>UDIGF-86 – Refactor Process encapsulating the algorithms into Strategies(Buffer, Join and Dissolve). / Refactorizar Process encapsulando los algoritmos en Strategies(Buffer, Join y Dissolve).</P>
+<P>UDIGF-195 – Demo usability - Add new images. / Agregar nuevas imagenes.</P>
+<P>UDIGF-180 – Spatial Join -New option for creating the result of the Join operation on a new target layer, or for showing the result features selected. / Opción para crear features en un layer destion o solo producir una selcción de la capa de origen.</P>
+<H2 CLASS="western">8.3 Task</H2>
+<P>UDIGF-196 – Update the Help and the online wiki. / Actualizar el Help y la wiki online.</P>
+<H2 CLASS="western">9. Release Notes 1.1.0.rc6</H2>
+<H2 CLASS="western">9.1 Patch</H2>
+<P>UDIGF-130 – Buffer - Doesn't take into account the option "Segments per quadrant". / No respeta la opción "Segments per quadrant". </P>
+<H2 CLASS="western">9.2 Improvement</H2>
+<P>UDIGF-174 – Buffer - Besides the positive values, in the distance, it must allow zero and negative values. / Además de valores positivos, en su distancia, debe permitir cero y valores negativos.</P>
+<P>UDIGF-181 – Spatial Join - Redefine Crosses allowing it to use over polygons. / Redefinición de Crosses para que pueda hacerse sobre polígonos.</P>
+<P>UDIGF-190 – SOView - When the view gets focused, it reduces the latency time. / Mejorar el tiempo de respuesta cuando esta vista obtiene el foco.</P>
+<P>UDIGF-148 – SOView - Demo usability. / Usabilidad Demo.</P>
+<H2 CLASS="western">10. Release Notes 1.1.0.rc5</H2>
+<H2 CLASS="western">10.1 Patch</H2>
+<P>UDIGF-150 – CLIP - Doesn't cut Point or Multipoint layer with a polygon layer. / No corta una capa de tipo Punto (o Multipunto) con otra de tipo polígono.</P>
+<P>UDIGF-171 – SOView -Doesn't generate correctly the next layer name. / No genera el proximo nombre de layer adecuadamente.</P>
+<P>UDIGF-175 – Dissolve - Doesn't carry out dissolve operation of selected polygons group. / No realiza el dissolve de un grupo de polígonos seleccionados.</P>
+<P>UDIGF-176 – Dissolve - Making an empty selection the operation creates an empty layer. / Al realizar una selección vacia la operación espacial  genera una capa vacía.</P>
+<P>UDIGF-177 – Join - The features are generated more than one time in case of making true the relation with more than one feature. / Los features son generados mas de una vez en el caso de hacer verdadera la relación con mas de un feature.</P>
+<H2 CLASS="western">10.2 Improvement</H2>
+<P>UDIGF-169 – Merge - Add message bubble to merge tool. / Agregar message bubble al merge.</P>
+<P>UDIGF-172 – Spatial Join - Minimize the amount of relations. Resultant relations: Disjoint, Touches, Crosses, Within, Overlaps, Contains, Intersects, Equals. / Reducir la cantidad de relaciones. Relaciones resultantes: Disjoint, Touches, Crosses, Within, Overlaps, Contains, Intersects, Equals.</P>
+<H2 CLASS="western">10.3 New Feature</H2>
+<P>UDIGF-165 – Help - Help on Dissolve and Spatial Join. / Help en Dissolve y Spatial Join.</P>
+<H2 CLASS="western">10.4 Task</H2>
+<P>UDIGF-168 – Align with udig RC 14. / Alinear con udig RC 14.</P>
+<H2 CLASS="western">11. Release Notes 0.1.0.rc4</H2>
+<H2 CLASS="western">11.1 Patch</H2>
+<P>UDIGF-113 – Clip: when many cuts are done in a multipolygon
+geometry the clip operation does not make the fragments for split
+geometries. / Cuando se hacen varios cortes en un multipol&iacute;gono,
+no resultan los fragmentos requeridos por una divisi&oacute;n de la
+geometr&iacute;a .</P>
+<P>UDIGF-138 – Clip: when the “to clip layer” is used as target
+of the clip operation, the original features are inserted without
+changes.  / Usando como destino la “capa a cortar” el proceso
+inserta sin cambios los features de origen.</P>
+<P>UDIGF-133 – Merge: when the layer is polygon type it must
+validate that the union can be done.   / Chequear antes de realizar e
+merge en una capa de tipo polygon que se pueda realizar la union
+geom&eacute;trica.</P>
+<H2 CLASS="western">11.2 Improvement</H2>
+<P>UDIGF-99 -  Alternative access to spatial operations view from
+Operation and Layer menus / facilitar la apertura de la vista de
+operaciones espaciales desde los men&uacute;es de Operaciones y
+Capas.</P>
+<P>UDIG-131- Spatial Operations: Usability and presentation
+improvements:</P>
+<UL>
+	<LI><P>Clip Layout: Layer to clip should be over clipping. 
+	</P>
+	<LI><P>Buffer: add segment by quadrant tooltip.</P>
+	<LI><P>Buffer:  stack of distance unit putting them directly next to
+	the unit.</P>
+</UL>
+<H2 CLASS="western">11.3 New Feature</H2>
+<P>UDIGF-129 – User Documentation (Help on line) / Documentaci&oacute;n
+de usuarios</P>
+<H2 CLASS="western">12. Release Notes 0.1.0.rc3 
+</H2>
+<H2 CLASS="western">12.1 Patch</H2>
+<P ALIGN=LEFT>UDIGF-88 Spatial Operations– Selected features
+presentation shows negatives values / La presentaci&oacute;n de
+features seleccionados presenta valores negativos</P>
+<P ALIGN=LEFT>UDIGF-119 Spatial Operations – Must use the map's CRS
+to generate the result layer./ La capa de resultado debe ser generada
+con el CRS del mapa.</P>
+<H2 CLASS="western">13. Release Notes 0.1.0.rc2</H2>
+<H2 CLASS="western">13.1 Patch</H2>
+<P>UDIGF-110 Spatial Operation Clip - Sometimes the clip result is
+not displayed completely, it is necessary to commit the new clipped
+layer to see the final result. / En ocasiones el resultado del clip
+no se presenta y es necesario hacer el commit para ver el resultado
+final.</P>
+<H2 CLASS="western">13.2 Improvements</H2>
+<P>UDIGF-104 Spatial Operations View – To improve the usability is
+important to avoid the scroll of the “perform button”. / En la
+Vista de Operaciones Espaciales - Evitar el scroll del bot&oacute;n
+de “ejecuci&oacute;n”.</P>
+<P>UDIGF-100 Spatial Operation Clip – Should be importan to be able
+to leave te clip result in a other layer (different of “to clip
+layer”). / Operaci&oacute;n Espacial Cortar - agregar el la
+posibilidad de dejar el resultado en otra capa</P>
+<P>UDIGF-98 Spatial Operations Information Area – Don't display
+obvious messages. / Area de informaci&oacute;n en Operaciones
+Espaciales - Eliminar mensajes obvios.</P>
+<P>UDIGF-97 The source layer in Spatial Operations must be
+synchronized with the selected layer in the Project View. /
+Sincronizar la capa de origen con la selecci&oacute;n de capas en
+mapa.</P>
+<P>UDIGF-96 Buffer's width and its units selection should be
+together. / La selecci&oacute;n de unidad deber&iacute;a estar junto
+al control donde se especifica el tama&ntilde;o del buffer.</P>
+<P>UDIGF-95 Should eliminate the “New Layer Dialog” and add the
+possibility to specify a new name for the result layer (generates
+defaults too) / Eliminar el di&aacute;logo para crear nuevo layer,
+a&ntilde;adiendo la posibilidad de crear una capa a partir de su
+nombre (que a interfaz proponga uno por omisi&oacute;n).</P>
+<P>UDIGF-85 Does not present the layers in combo box which cannot be
+resolved to FeatureStore. / No presentar capas en cajas de
+combinaci&oacute;n de capas origen/destino que no se puedan
+resolverse a un FeatureStore.</P>
+<H2 CLASS="western">14. Release Notes 0.1.0.rc1</H2>
+<H2 CLASS="western">14.1 Patch</H2>
+<P>UDIGF-103 - When two LineString Features were be touching, but
+they weren't be crossing, the merge tool doesn't make the geometry
+union. / En la fusi&oacute;n, si dos LineString se tocan, pero no se
+cruzan, no se realiza la uni&oacute;n. 
+</P>
+<P>UDIGF-102 - In Spatial Operations, if the user does a selection
+without features the spatial operation must take all layer's
+features. / Operaciones Espaciales- Ante una selecci&oacute;n nula
+(sin features en el bounding box) deben seleccionarse todos los
+features del layer para aplicar la operaci&oacute;n. 
+</P>
+<P>UDIGF-93 - Sometimes the merge dialog presents an inconsistent
+error message. / El di&aacute;logo del Merge presenta un mensaje de
+error que es consecuente con las acciones en curso. 
+</P>
+<P>UDIGF-92 - Sometimes if the user splits a feature the merge result
+show the merged borders. / En ocasiones una fusi&oacute;n de features
+a los que previamente se les aplico la herramienta de dividir sigue
+presentando las divisiones (o no hace la union).</P>
+<P>UDIGF-91 - If we do many changes in a layer without committing the
+merge tool can not get the selected features. / udig no devuelve los
+features seleccionados para realizar la fusi&oacute;n despu&eacute;s
+de realizar varias cambios en una capa sin confirmar.</P>
+<P>UDIGF-89 - The Trim Line doesn't work well if it was preceded by a
+merge. / El Ajuste de Lineas no se realiza correctamente si es
+precedido de una Fusi&oacute;n.</P>
+<P>UDIGF-88 - Sometimes the Buffer and Intersect operations present
+negative values in the count features boxes. / Aveces las operaciones
+Buffer e Intersectar presentan valores negativos en la cuenta de
+Features seleccionados</P>
+<P>UDIGF-84 - Spatial operation in Spanish does not present the
+operation metaphors. / No se presentan las met&aacute;foras de las
+operaciones cuando udig funciona en Espa&ntilde;ol. 
+</P>
+<P>UDIGF-81 -Split tool does not find features when the map hasn't
+got the layer's CRS./ No encuentra features para dividir (Split)
+cuando el Mapa no esta en el CRS del Layer. 
+</P>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>

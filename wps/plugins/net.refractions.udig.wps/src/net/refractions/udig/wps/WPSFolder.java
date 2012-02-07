@@ -177,7 +177,7 @@ public class WPSFolder implements IResolveFolder {
             if (icon == null) {
                 icon = WPSProcessImpl.fetchIcon(monitor, this.processFactory, service);
                 if (icon == null) {
-                    icon = CatalogUIPlugin.getDefault().getImages().getImageDescriptor(
+                    icon = CatalogUIPlugin.getDefault().getImageRegistry().getDescriptor(
                             ISharedImages.GRID_OBJ);
                 }
             }

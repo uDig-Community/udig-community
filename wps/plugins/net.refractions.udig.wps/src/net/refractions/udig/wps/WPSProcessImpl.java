@@ -18,6 +18,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import net.opengis.wps10.WPSCapabilitiesType;
+import net.refractions.udig.catalog.CatalogPlugin;
 import net.refractions.udig.catalog.IProcess;
 import net.refractions.udig.catalog.IProcessInfo;
 import net.refractions.udig.catalog.IResolve;
@@ -186,7 +187,7 @@ public class WPSProcessImpl extends IProcess {
             if (icon == null) {
                 icon = fetchIcon(monitor, processFactory, service);
                 if (icon == null) {
-                    icon = CatalogUIPlugin.getDefault().getImages().getImageDescriptor(
+                    icon = CatalogUIPlugin.getDefault().getImageDescriptor(
                             ISharedImages.GRID_OBJ);
                 }
             }
@@ -252,7 +253,7 @@ public class WPSProcessImpl extends IProcess {
                 int sh = 0;
                 ImageData contents = image.getImageData();
                 if (contents == null) {
-                    return CatalogUIPlugin.getDefault().getImages().getImageDescriptor(
+                    return CatalogUIPlugin.getDefault().getImageDescriptor(
                             ISharedImages.GRID_MISSING);
                 }
                 if (contents.maskData != null) {
@@ -352,7 +353,7 @@ public class WPSProcessImpl extends IProcess {
             }
         } catch (IOException t) {
             WpsPlugin.trace("Could not get icon", t); //$NON-NLS-1$
-            return CatalogUIPlugin.getDefault().getImages().getImageDescriptor(
+            return CatalogUIPlugin.getDefault().getImageDescriptor(
                     ISharedImages.GRID_MISSING);
         }
     }
@@ -363,7 +364,7 @@ public class WPSProcessImpl extends IProcess {
         WebProcessingService wps = service.getWPS(monitor);
 
         // TODO: is there any possible way to set a legend graphic in a wps capabilities doc?
-        return CatalogUIPlugin.getDefault().getImages().getImageDescriptor(
+        return CatalogUIPlugin.getDefault().getImageDescriptor(
                 ISharedImages.GRID_OBJ); 
         
 //        if (wps.getCapabilities().getRequest().getGetLegendGraphic() == null) {
@@ -552,7 +553,7 @@ public class WPSProcessImpl extends IProcess {
                 description = "";
             }
 
-            icon = CatalogUIPlugin.getDefault().getImages().getImageDescriptor(ISharedImages.GRID_OBJ);
+            icon = CatalogUIPlugin.getDefault().getImageDescriptor(ISharedImages.GRID_OBJ);
 
             //icon = fetchIcon( monitor, this.processFactory );
         }

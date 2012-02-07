@@ -456,6 +456,7 @@ public class ProcessView extends ViewPart {
         
         // see if the object to import matches the type expected by the param
         String value = null;
+        
         if (param.type == Geometry.class) {
             // If we have a layer, try getting a feature from it
             if (obj instanceof ILayer) {
@@ -489,8 +490,10 @@ public class ProcessView extends ViewPart {
             } 
         }
         else {
-            // fall back on toString
-            value = obj.toString();
+            if( obj != null ){
+                // fall back on toString
+                value = obj.toString();
+            }
         }
         
         // try setting the value manually, and refreshing

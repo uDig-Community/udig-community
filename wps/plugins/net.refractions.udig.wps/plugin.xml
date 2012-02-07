@@ -27,7 +27,7 @@
     <view
           class="net.refractions.udig.wps.internal.ui.ProcessView"
           id="net.refractions.udig.wps.internal.ui.ProcessView"
-          name="%process.label">
+          name="Process">
     </view>
  </extension>
  <extension
